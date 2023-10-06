@@ -1,0 +1,122 @@
+.post-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#post-text {
+    border: none;
+    resize: none;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+}
+
+.photo-icon label {
+    display: flex;
+    align-items: center;
+    color: #1877f2; /* Couleur de Facebook pour les icônes */
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.photo-icon input[type="file"] {
+    display: none;
+}
+
+.separator {
+    height: 30px;
+    width: 1px;
+    background-color: #ccc;
+    margin-right: 10px;
+}
+
+#post-button {
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Styles pour la liste de publications */
+.post-list {
+    margin-top: 20px;
+}
+
+/* Styles pour chaque publication individuelle */
+.post {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+/* Styles pour l'en-tête de la publication (photo de profil et nom de l'utilisateur) */
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.post-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Styles pour les boutons d'action de la publication */
+.post-actions {
+    margin-top: 10px;
+}
+
+.like-button,
+.comment-button,
+.share-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Styles pour les icônes */
+.like-button i,
+.comment-button i,
+.share-button i {
+    margin-right: 5px;
+}
+
+/* Styles pour les séparateurs entre les boutons d'action */
+.separator {
+    height: 20px;
+    width: 1px;
+    background-color: #ddd;
+    margin: 0 10px;
+}

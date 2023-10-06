@@ -1,0 +1,108 @@
+/* Rating Section Styles */
+.rating-section {
+    margin-top: 30px;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 24px;
+    color: #ffbb00; /* Adjust the color to your preference */
+    cursor: pointer;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffc700; /* Adjust the hover color if desired */
+}
+
+/* Style des boutons "J'aime" et "Je n'aime pas" */
+.btn-like,
+.btn-dislike {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-like i,
+.btn-dislike i {
+    margin-right: 5px;
+}
+
+/* Style pour le nombre de clics */
+.like-count,
+.dislike-count {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.comments-section {
+    font-family: Arial, sans-serif;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.comment-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-content {
+    flex-grow: 1;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+.comment-time {
+    color: #777;
+    font-size: 12px;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.btn-like,
+.btn-comment {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #777;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.btn-like i,
+.btn-comment i {
+    margin-right: 5px;
+}
+
+.btn-like:hover,
+.btn-comment:hover {
+    color: #333;
+}
+
+
+
+
+

@@ -1,0 +1,152 @@
+<app-navbar-style-four></app-navbar-style-four>
+
+<div class="inner-banner">
+    <div class="container">
+        <div class="inner-title text-center">
+            <h3>S'inscrire </h3>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><i class='bx bx-chevron-right'></i></li>
+                <li>S'inscrire </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="inner-banner-shape">
+        <div class="shape-one"><img src="assets/img/inner-banner/banner-shape1.png" alt="Images"></div>
+        <div class="shape-two"><img src="assets/img/inner-banner/banner-shape2.png" alt="Images"></div>
+        <div class="shape-three"><img src="assets/img/inner-banner/banner-shape3.png" alt="Images"></div>
+        <div class="inner-banner-dots"><img src="assets/img/shape/dots-shape.png" alt="Images"></div>
+    </div>
+</div>
+
+<div class="sign-in-area pt-50 pb-70">
+    <div class="container">
+        <div class="section-title text-center">
+            <span class="sp-before sp-after">S'inscrire </span>
+            <h2 class="h2-color">Créer un compte!</h2>
+        </div>
+
+        <div class="row align-items-center pt-45">
+            <div class="col-lg-5 col-md-12">
+                <div class="user-all-img">
+                    <img src="assets/img/faq-img.png" alt="Images">
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-12">
+                <div class="user-all-form">
+                    <div class="contact-form">
+                        <form id="contactForm" #userForm="ngForm" (ngSubmit)="registerUser()">
+                            <div class="form-group">
+                                <i class='bx bx-user'></i>
+                                <input type="text" [(ngModel)]="userDto.firstName" name="firstName" id="firstname" class="form-control" required minlength="3" maxlength="50" placeholder="Nom">
+                                <div *ngIf="userForm.controls['firstName'].touched && userForm.controls['firstName'].invalid" class="error-message">
+                                    <div *ngIf="userForm.controls['firstName'].hasError('required')">First name is required.</div>
+                                    <div *ngIf="userForm.controls['firstName'].hasError('minlength')">First name must be at least 3 characters.</div>
+                                    <div *ngIf="userForm.controls['firstName'].hasError('maxlength')">First name must not exceed 50 characters.</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <i class='bx bx-user'></i>
+                                <input type="text" [(ngModel)]="userDto.lastName" name="lastName" id="lastname" class="form-control" required minlength="3" maxlength="50" placeholder="Prénom">
+                                <div *ngIf="userForm.controls['lastName'].touched && userForm.controls['lastName'].invalid" class="error-message">
+                                    <div *ngIf="userForm.controls['lastName'].hasError('required')">Last name is required.</div>
+                                    <div *ngIf="userForm.controls['lastName'].hasError('minlength')">Last name must be at least 3 characters.</div>
+                                    <div *ngIf="userForm.controls['lastName'].hasError('maxlength')">Last name must not exceed 50 characters.</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <i class='bx bx-mail-send'></i>
+                                <input type="email" [(ngModel)]="userDto.email" name="email" id="email" class="form-control" required email maxlength="100" placeholder="Email">
+                                <div *ngIf="userForm.controls['email'].touched && userForm.controls['email'].invalid" class="error-message">
+                                    <div *ngIf="userForm.controls['email'].hasError('required')">Email is required.</div>
+                                    <div *ngIf="userForm.controls['email'].hasError('email')">Invalid email format.</div>
+                                    <div *ngIf="userForm.controls['email'].hasError('maxlength')">Email must not exceed 100 characters.</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <i class='bx bx-lock-alt'></i>
+                                <input class="form-control" type="password" [(ngModel)]="userDto.password" name="password" placeholder="Mot de passe" required minlength="8" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).+$">
+                                <div *ngIf="userForm.controls['password'].touched && userForm.controls['password'].invalid" class="error-message">
+                                    <div *ngIf="userForm.controls['password'].hasError('required')">Password is required.</div>
+                                    <div *ngIf="userForm.controls['password'].hasError('minlength')">Password must be at least 8 characters.</div>
+                                    <div *ngIf="userForm.controls['password'].hasError('pattern')">Password must include at least one uppercase letter, one lowercase letter, and one digit.</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <i class='bx bx-phone'></i>
+                                <input type="text" [(ngModel)]="userDto.phoneNumber" name="phoneNumber" id="phoneNumber" class="form-control" required pattern="^[0-9]*$" maxlength="20" placeholder="Phone number">
+                                <div *ngIf="userForm.controls['phoneNumber'].touched && userForm.controls['phoneNumber'].invalid" class="error-message">
+                                    <div *ngIf="userForm.controls['phoneNumber'].hasError('required')">Phone number is required.</div>
+                                    <div *ngIf="userForm.controls['phoneNumber'].hasError('pattern')">Invalid phone number format. Use only digits.</div>
+                                    <div *ngIf="userForm.controls['phoneNumber'].hasError('maxlength')">Phone number must not exceed 20 characters.</div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="role">Rôle:</label>
+                                <select [(ngModel)]="userDto.role" name="role" id="role" class="form-control" required>
+                                    <option value="" disabled selected>Sélectionnez un rôle</option>
+                                    <option *ngFor="let role of roles" [value]="role">{{ role }}</option>
+                                </select>
+                                <div *ngIf="userForm.controls['role'].touched && userForm.controls['role'].hasError('required')" class="error-message">Role is required.</div>
+                            </div>
+
+                            <!-- ... Other form fields ... -->
+
+                            <div class="text-center">
+                                <button type="button" (click)="registerUser()" class="default-btn" [disabled]="userForm.invalid">S'inscrire <i class='bx bx-plus'></i></button>
+                                <p *ngIf="errorMessage" class="error-message">{{ errorMessage }}</p>
+                            </div>
+
+                            <!-- ... Social buttons ... -->
+
+                            <p class="account-desc">Vous avez déjà un compte ? <a routerLink="/sign-in">Se connecter</a></p>
+                        </form>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="brand-logo-area pt-100">
+    <div class="container-fluid">
+        <div class="container-max">
+            <div class="brand-logo-slider owl-carousel owl-theme">
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo1.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo2.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo3.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo4.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo5.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo6.png" alt="Images">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer-style-two></app-footer-style-two>

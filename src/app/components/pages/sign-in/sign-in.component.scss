@@ -1,0 +1,34 @@
+
+.social-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: transparent;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.facebook-btn {
+    background: url('/assets/Facebook_Logo.png') center/cover no-repeat;
+}
+
+.linkedin-btn {
+    background: url('/assets/linkedin.png') center/cover no-repeat;
+}
+
+.google-btn {
+    background: url('/assets/Google__G__Logo.png') center/cover no-repeat;
+}
+
+
+.social-btn:hover {
+    background-color: #eee;
+}

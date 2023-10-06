@@ -1,0 +1,212 @@
+<app-navbar-style-four></app-navbar-style-four>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<div class="inner-banner">
+    <div class="container">
+        <div class="inner-title text-center">
+            <h3>Details des événements</h3>
+            <ul>
+                <li><a href="index.html">Acceuil</a></li>
+                <li><i class='bx bx-chevron-right'></i></li>
+                <li>Details des événements</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="inner-banner-shape">
+        <div class="shape-one"><img src="assets/img/inner-banner/banner-shape1.png" alt="Images"></div>
+        <div class="shape-two"><img src="assets/img/inner-banner/banner-shape2.png" alt="Images"></div>
+        <div class="shape-three"><img src="assets/img/inner-banner/banner-shape3.png" alt="Images"></div>
+        <div class="inner-banner-dots"><img src="assets/img/shape/dots-shape.png" alt="Images"></div>
+    </div>
+</div>
+
+<div class="case-studies-widget pt-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+                <div class="case-studies-content">
+                    <div class="images-top">
+                        <img src="assets/avenement1.jpg" alt="Images" style="width: 700px; height: auto;">
+                    </div>
+                    <span></span>
+                    <h2>Nom de l'événement</h2>
+                    <p>Une brève description de l'événement, y compris son objectif, son contenu et ses points forts</p>
+
+                    <div class="content-widget-area">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 col-md-12">
+                                <div class="content-widget-img">
+                                    <img src="assets/img/case-studies/case-studies-details2.png" alt="Images">
+                                </div>
+                            </div>
+
+                            <div class="col-lg-5 col-md-12">
+                                <div class="content-widget-text">
+                                    <h2>Programme</h2>
+                                    <p>Liste des activités prévues pendant l'événement</p>
+                                    <ul>
+                                        <li><i class='bx bx-check'></i>Activité 1 </li>
+                                        <li><i class='bx bx-check'></i>Activité 2</li>
+                                        <li><i class='bx bx-check'></i>Activité 3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2>Équipement nécessaire </h2>
+                    <p>Si les participants doivent apporter quelque chose de spécifique (par exemple, un ordinateur portable, des documents imprimés, etc.).</p>
+                    <h2>Repas/Boissons</h2>
+                    <p>Des repas ou des boissons seront fournis lors de l'événement.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12">
+                <div class="contact-widget">
+                    <h2>Info</h2>
+                    <ul>
+                        <li>
+                            <i class="flaticon-telephone"></i>
+                            <div class="content">
+                                <h3>Propriétaire de l'événement </h3>
+                                <span>ThenCary</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="flaticon-tick"></i>
+                            <div class="content">
+                                <h3>Quand ?</h3>
+                                <span>26 Avril 2024</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="flaticon-planet-earth"></i>
+                            <div class="content">
+                                <h3>Location:</h3>
+                                <span>Turquie</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="flaticon-price-tag"></i>
+                            <div class="content">
+                                <h3>Coût :</h3>
+                                <span>1,500 DT</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="flaticon-planet-earth"></i>
+                            <div class="content">
+                                <h3>Contact :</h3>
+                                <span><a href="#">54 963 533</a></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="text-center mb-4">Vos commentaires</h2>
+            <p class="text-center">Nous attachons de l'importance à vos retours. Merci de nous faire part de votre expérience lors de l'événement.</p>
+
+            <form class="mb-4">
+                <div class="form-group">
+                    <label for="feedback">Votre commentaire :</label>
+                    <textarea id="feedback" name="feedback" rows="4" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Soumettre Vos Commentaires</button>
+            </form>
+
+            <div class="comments-section">
+                <h3>Commentaires :</h3>
+                <div class="comment" *ngFor="let comment of comments">
+                    <div class="comment-avatar">
+                        <img [src]="comment.image" [alt]="comment.author">
+                    </div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <span class="comment-author">{{ comment.author }}</span>
+                            <span class="comment-time">Il y a quelques instants</span>
+                        </div>
+                        <p>{{ comment.content }}</p>
+                        <button class="btn-like">
+                            <i class="far fa-thumbs-up"></i> J'aime
+                        </button>
+                        <button class="btn-dislike" (click)="dislikeComment(comment)">
+                            <i class="far fa-thumbs-down"></i> Je n'aime pas
+                        </button>
+                        <button class="btn-comment">
+                            <i class="far fa-comment"></i> Commenter
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-4">
+            <div class="ratings-section">
+                <h3 class="text-center mb-3">Évaluation :</h3>
+                <p class="text-center">Évaluez cet événement en donnant un nombre d'étoiles :</p>
+                <div class="star-rating text-center">
+                    <input type="radio" id="star5" name="rating" value="5">
+                    <label for="star5"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1"><i class="fas fa-star"></i></label>
+                </div>
+                <div class="text-center mt-3">
+                    <h4>Statistique d'évaluation :</h4>
+                    <p>Moyenne des évaluations : {{ calculateAverageRating() }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="brand-logo-area pt-100">
+    <div class="container-fluid">
+        <div class="container-max">
+            <div class="brand-logo-slider owl-carousel owl-theme">
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo1.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo2.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo3.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo4.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo5.png" alt="Images">
+                </div>
+
+                <div class="brand-logo-item">
+                    <img src="assets/img/brand/brand-logo6.png" alt="Images">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer-style-two></app-footer-style-two>
