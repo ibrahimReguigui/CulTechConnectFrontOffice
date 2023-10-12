@@ -28,13 +28,14 @@ import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privac
 import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.component';
 import { ServicesComponent } from './components/pages/services/services.component';
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
-import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
+import { ProfileComponent } from './components/pages/profile/profile.component';
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import {HttpClientModule} from '@angular/common/http';
 import {KeycloakAngularModule, KeycloakService} from 'keycloak-angular';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { EditProfileComponent } from './components/pages/edit-profile/edit-profile.component';
+import { CreateBlogComponent } from './components/pages/create-blog/create-blog.component';
 
 function initializeKeycloak(keycloak: KeycloakService) {
     return () =>
@@ -81,10 +82,11 @@ function initializeKeycloak(keycloak: KeycloakService) {
     ComingSoonComponent,
     ServicesComponent,
     ServicesDetailsComponent,
-    BlogDetailsComponent,
+    ProfileComponent,
     BlogComponent,
     ContactComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    CreateBlogComponent
   ],
   imports: [
     BrowserModule,
