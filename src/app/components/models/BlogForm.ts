@@ -4,4 +4,6 @@ export class BlogForm {
     description: string;
     createdOn: Date;
     isPublished: boolean;
+
+    image: string;
 }

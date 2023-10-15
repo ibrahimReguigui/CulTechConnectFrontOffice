@@ -23,14 +23,18 @@
 <div class="blog-area pt-50 pb-70">
     <div class="container">
         <div class="section-title text-center">
-            <span class="sp-before sp-after">Notrs Blogs</span>
+            <span class="sp-before sp-after">Notre Blogs</span>
             <h2 class="h2-color2">Découvrez nos derniers articles de blog</h2>
             <p class="margin-auto">Notre objectif est de partager des connaissances, d'inspirer et de vous tenir informés des dernières tendances.</p>
         </div>
 
         <div class="row pt-45">
-            <div class="col-lg-4 col-md-6" *ngFor="let blog of blogs">
+            <div class="col-lg-4 col-md-6" *ngFor="let blog of blogs ; index as i">
                 <div class="blog-card">
+                    <a [routerLink]="['/blog-details', blog.id]">
+                        <img [src]="images[i]" alt="Image" />
+
+                    </a>
                     <div class="content">
                         <ul>
                             <li><i class='bx bx-time-five'></i> {{ blog.createdOn | date:'dd/MM/yyyy' }}</li>
@@ -41,6 +45,7 @@
                 </div>
             </div>
         </div>
+
 
 
 

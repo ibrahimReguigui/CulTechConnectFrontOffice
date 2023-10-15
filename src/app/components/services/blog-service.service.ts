@@ -16,4 +16,12 @@ export class BlogServiceService {
     getAllBlogs(): Observable<BlogForm[]> {
         return this.http.get<BlogForm[]>(`${this.url}getAllBlog`);
     }
+
+    getBlogById(blogId: number): Observable<BlogForm> {
+        return this.http.get<BlogForm>(`${this.url}file/blogs/${blogId}`);
+    }
+
+    getBlogImage(blogId: number): Observable<any> {
+        return this.http.get(`${this.url}/blogs/${blogId}/image`, { responseType: 'blob' });
+    }
 }

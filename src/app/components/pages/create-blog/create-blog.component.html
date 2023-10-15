@@ -41,28 +41,23 @@
                                             <textarea formControlName="description" class="form-control" id="description" placeholder="Description du blog"></textarea>
                                             <span *ngIf="blogForm.get('description').invalid && blogForm.get('description').touched" class="error-message">Champ obligatoire</span>
                                         </div>
+                                        <div class="form-group">
+                                            <label for="fileUpload"> <i class='bx bxs-cloud-upload'></i></label>
+                                            <input type="file" (change)="selectFile($event)" name="file" class="form-control" id="fileUpload" style="display: none;" />
+                                        </div>
                                     </div>
-
                                     <div class="col-lg-12 col-md-12">
                                         <button type="submit" class="default-btn">Postez votre Blog<i class='bx bx-plus'></i></button>
                                     </div>
                                     <div class="success-message" *ngIf="successMessage">{{ successMessage }}</div>
-
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
 </div>
-
-
-<app-footer-style-two></app-footer-style-two>
-
-
 
 <app-footer-style-two></app-footer-style-two>
