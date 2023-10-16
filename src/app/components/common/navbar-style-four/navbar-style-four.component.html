@@ -10,7 +10,7 @@
                 <style>
                     .navbar-brand img {
                         width: 150px;
-                        height: 100px;
+                        height: 80px;
                         float: right;
                         margin-left: 50px;
                     }
@@ -91,19 +91,30 @@
                     </ul>
 
                     <div class="side-nav d-in-line align-items-center">
-                        <div class="side-item">
+                        <!--<div class="side-item">
                             <div class="search-box">
                                 <i class="flaticon-loupe"></i>
                             </div>
+                        </div>-->
+                        <div class="side-item" [hidden]="!authenticated">
+                            <div class="user-btn">
+                                <a routerLink="/sign-up"><i class="flaticon-clipboard">2</i></a>
+                            </div>
                         </div>
-                        <div class="side-item">
+                        <div class="side-item" [hidden]="!authenticated">
+                            <div class="user-btn">
+                                <a routerLink="/sign-up"><i class="flaticon-email-1">{{unseenMessageNumber}}</i></a>
+                            </div>
+                        </div>
+                        <div class="side-item" [hidden]="!authenticated">
                             <div class="user-btn">
                                 <a routerLink="/sign-up"><i class="flaticon-contact"></i></a>
                             </div>
                         </div>
                         <div class="side-item">
                             <div class="nav-add-btn">
-                                <a routerLink="/contact" class="nav-menu-btn">Contactez-nous<i class='bx bx-plus'></i></a>
+                                <a [hidden]="authenticated" (click)="login()" class="nav-menu-btn">Login<i class='bx bx-plus'></i></a>
+                                <a [hidden]="!authenticated" (click)="logout()" (click)="logout()" class="nav-menu-btn">Logout <i class='bx bx-log-out'></i></a>
                             </div>
                         </div>
                     </div>

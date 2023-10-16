@@ -21,8 +21,9 @@ import { ServicesDetailsComponent } from './components/pages/services-details/se
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
-import {AuthGuard} from './components/security/AuthGuard';
+import {AuthGuard} from './security/AuthGuard';
 import {EditProfileComponent} from './components/pages/edit-profile/edit-profile.component';
+import {ChatComponent} from './chat/chat.component';
 
 const routes: Routes = [
     {path: '', component: SeoAgencyComponent},
@@ -47,6 +48,7 @@ const routes: Routes = [
     {path: 'profile', component: BlogDetailsComponent, canActivate: [AuthGuard]},
     {path: 'contact', component: ContactComponent},
     {path: 'edit-profile', component: EditProfileComponent},
+    {path: 'chat', component: ChatComponent, canActivate: [AuthGuard]},
     {path: '**', component: ErrorComponent}
 ];
 

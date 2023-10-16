@@ -35,6 +35,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {KeycloakAngularModule, KeycloakService} from 'keycloak-angular';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { EditProfileComponent } from './components/pages/edit-profile/edit-profile.component';
+import { ChatComponent } from './chat/chat.component';
 
 function initializeKeycloak(keycloak: KeycloakService) {
     return () =>
@@ -84,7 +85,8 @@ function initializeKeycloak(keycloak: KeycloakService) {
     BlogDetailsComponent,
     BlogComponent,
     ContactComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    ChatComponent
   ],
   imports: [
     BrowserModule,

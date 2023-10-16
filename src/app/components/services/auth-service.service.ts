@@ -8,7 +8,7 @@ import {KeycloakService} from 'keycloak-angular';
   providedIn: 'root'
 })
 export class AuthServiceService {
-    url = 'http://localhost:8090/api/user';
+    url = 'http://localhost:8092/api/user';
 
 
   constructor(private http: HttpClient, private keycloakService: KeycloakService) { }
