@@ -7,7 +7,6 @@
     <list default="true" id="b5be9d8d-168d-4969-8b66-a26342155241" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/0.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/10.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/11.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/12.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/13.pack" afterDir="false" />
@@ -16,26 +15,21 @@
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/16.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/16.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/17.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/17.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/18.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/18.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/19.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/19.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/4.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/5.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/5.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/6.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/7.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/7.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/8.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/9.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/models/BlogForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/models/BlogForm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/pages/create-blog/create-blog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/create-blog/create-blog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/pages/create-blog/create-blog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/create-blog/create-blog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/services/blog-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/services/blog-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/services/file-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/services/file-service.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +126,7 @@
       <workItem from="1697022412840" duration="72000" />
       <workItem from="1697111863880" duration="4394000" />
       <workItem from="1697117428338" duration="4234000" />
-      <workItem from="1697130537020" duration="37728000" />
+      <workItem from="1697130537020" duration="52502000" />
     </task>
     <servers />
   </component>

@@ -46,36 +46,32 @@
             </div>
         </div>
 
-
-
-
         <div class="col-lg-12 col-md-12">
-                <div class="pagination-area text-center">
-                    <a routerLink="/blog" class="prev page-numbers"><i class="bx bx-chevron-left"></i></a>
-                    <span class="page-numbers current" aria-current="page">1</span>
-                    <a routerLink="/blog" class="page-numbers">2</a>
-                    <a routerLink="/blog" class="page-numbers">3</a>
-                    <a routerLink="/blog" class="page-numbers">4</a>
-                    <a routerLink="/blog" class="next page-numbers"><i class="bx bx-chevron-right"></i></a>
-                </div>
-                <div class="text-center create-blog-button-container">
-                    <button class="btn btn-primary create-blog-button" (click)="onCreateBlogClick()">
-                        <i class="bx bx-plus"></i> Créer un blog
-                    </button>
-                </div>
+            <div class="pagination-area text-center">
+                <a routerLink="/blog" class="prev page-numbers" *ngIf="currentPage > 1">
+                    <i class="bx bx-chevron-left"></i>
+                </a>
+                <span class="page-numbers current" aria-current="page">{{ currentPage }}</span>
+                <a *ngFor="let page of totalPages" (click)="onPageChange(page)" class="page-numbers">{{ page }}</a>
+                <a routerLink="/blog" class="next page-numbers" *ngIf="currentPage < totalPages.length">
+                    <i class="bx bx-chevron-right"></i>
+                </a>
             </div>
-
+            <div class="text-center create-blog-button-container">
+                <button class="btn btn-primary create-blog-button" (click)="onCreateBlogClick()">
+                    <i class="bx bx-plus"></i> Créer un blog
+                </button>
+            </div>
         </div>
     </div>
+</div>
 
-    <div class="blog-shape">
-        <div class="shape1"><img src="assets/img/shape/shape1.png" alt="Images"></div>
-        <div class="shape2"><img src="assets/img/shape/shape5.png" alt="Images"></div>
-        <div class="shape3"><img src="assets/img/shape/shape4.png" alt="Images"></div>
-        <div class="shape4"><img src="assets/img/shape/shape6.png" alt="Images"></div>
-    </div>
-
-
+<div class="blog-shape">
+    <div class="shape1"><img src="assets/img/shape/shape1.png" alt="Images"></div>
+    <div class="shape2"><img src="assets/img/shape/shape5.png" alt="Images"></div>
+    <div class="shape3"><img src="assets/img/shape/shape4.png" alt="Images"></div>
+    <div class="shape4"><img src="assets/img/shape/shape6.png" alt="Images"></div>
+</div>
 
 <div class="brand-logo-area pt-100">
     <div class="container-fluid">

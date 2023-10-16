@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpEvent} from '@angular/common/http';
+import {HttpClient, HttpEvent, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {BlogForm} from '../models/BlogForm';
 
@@ -22,4 +22,7 @@ export class FileServiceService {
         return this.http.get<BlogForm[]>(`${this.url}file/blogs`);
     }
 
+    updateBlogWithImage(blogId: number, formData: FormData, headers: HttpHeaders): Observable<any> {
+        return this.http.put<any>(`${this.url}file/update/${blogId}`, formData, { headers });
+    }
 }

@@ -25,10 +25,13 @@ import {AuthGuard} from './components/security/AuthGuard';
 import {EditProfileComponent} from './components/pages/edit-profile/edit-profile.component';
 import {CreateBlogComponent} from './components/pages/create-blog/create-blog.component';
 import {BlogDetailsComponent} from './components/pages/blog-details/blog-details.component';
+import {UpdateBlogComponent} from './components/pages/update-blog/update-blog.component';
 
 const routes: Routes = [
     {path: '', component: SeoAgencyComponent},
     {path: 'create-blog', component: CreateBlogComponent},
+    {path: 'update-blog/:blogId', component: UpdateBlogComponent},
+    { path: 'blog-details/:blogId', component: BlogDetailsComponent },
     {path: 'ai-startup', component: AiStartupComponent},
     {path: 'machine-learning', component: MachineLearningComponent},
     {path: 'about', component: AboutComponent},
@@ -47,7 +50,6 @@ const routes: Routes = [
     {path: 'services', component: ServicesComponent},
     {path: 'services-details', component: ServicesDetailsComponent},
     {path: 'blog', component: BlogComponent},
-    { path: 'blog-details/:blogId', component: BlogDetailsComponent },
     {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
     {path: 'contact', component: ContactComponent},
     {path: 'edit-profile', component: EditProfileComponent},

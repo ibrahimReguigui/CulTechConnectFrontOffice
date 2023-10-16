@@ -37,6 +37,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { EditProfileComponent } from './components/pages/edit-profile/edit-profile.component';
 import { CreateBlogComponent } from './components/pages/create-blog/create-blog.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
+import { UpdateBlogComponent } from './components/pages/update-blog/update-blog.component';
 
 function initializeKeycloak(keycloak: KeycloakService) {
     return () =>
@@ -88,7 +89,8 @@ function initializeKeycloak(keycloak: KeycloakService) {
     ContactComponent,
     EditProfileComponent,
     CreateBlogComponent,
-    BlogDetailsComponent
+    BlogDetailsComponent,
+    UpdateBlogComponent
   ],
   imports: [
     BrowserModule,

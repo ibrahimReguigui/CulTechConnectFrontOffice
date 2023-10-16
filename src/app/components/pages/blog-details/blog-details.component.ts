@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {BlogForm} from '../../models/BlogForm';
 import {BlogServiceService} from '../../services/blog-service.service';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-blog-details',
@@ -48,7 +48,8 @@ export class BlogDetailsComponent implements OnInit {
         }
     };
   constructor(private blogService: BlogServiceService,
-              private route: ActivatedRoute) { }
+              private route: ActivatedRoute,
+              private router: Router) { }
 
   ngOnInit(): void {
       this.route.paramMap.subscribe(params => {
@@ -74,6 +75,11 @@ export class BlogDetailsComponent implements OnInit {
     arrayBufferToBase64(image: string): string {
         return 'data:image/jpeg;base64,' + image;
     }
+
+    goToUpdateBlog(blogId: number): void {
+        this.router.navigate(['/update-blog', blogId]);
+    }
+
     onLike(comment: any): void {
         comment.likes++;
     }
