@@ -1,3 +1,5 @@
+import {Message} from './message';
+
 export class User {
     id:string
     firstName: string;
@@ -11,4 +13,6 @@ export class User {
     societyName:string;
     adress:string;
     info:string;
+    unreadMessages:number;
+    lastMessager:Message;
 }

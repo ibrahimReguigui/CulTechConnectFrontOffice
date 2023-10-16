@@ -27,27 +27,30 @@ export class ChatComponent implements OnInit, AfterViewChecked {
     connectedUsers: string[] = [];
     userList: User[] = [];
     interlocuteur: User;
-    unseenMessageNumber:number;
-    loggedInUser:KeycloakProfile;
+    unseenMessageNumber: number = 0;
+    loggedInUser: KeycloakProfile;
+    searchInput: string = '';
+
     constructor(private keycloak: KeycloakService, private webSocketService: WebSocketService,
-                private userService: UserService,private chatService:ChatService,) {
+                private userService: UserService, private chatService: ChatService,) {
     }
 
     ngOnInit(): void {
         this.keycloak.loadUserProfile().then((userProfile) => {
             this.userId = userProfile.id;
-            this.loggedInUser=userProfile;
+            this.loggedInUser = userProfile;
             this.connect();
         });
         this.userService.getAllUser().subscribe(res => {
-            console.log(res);
             this.userList = res;
+            this.chatService.getAllMyMessage().subscribe(res => {
+                this.messages = res;
+                this.unseenMessageNumber = this.messages.filter(e => e.recipient == this.userId &&
+                    e.seen == false).length;
+                this.updateUnreadMessagesAndLastMessage();
+            });
         });
-        this.chatService.getAllMyMessage().subscribe(res=> {
-            this.messages = res;
-            this.unseenMessageNumber=this.messages.filter(e=>e.recipient==this.userId &&
-            e.seen==false).length;
-        })
+
 
     }
 
@@ -69,7 +72,10 @@ export class ChatComponent implements OnInit, AfterViewChecked {
         // Subscribe to messages
         this.webSocketService.subscribeToMessages().subscribe((message) => {
             this.messages.push(message);
-            this.chatWithInterlocuterur(this.interlocuteur)
+            if (this.interlocuteur != null) {
+                this.chatWithInterlocuterur(this.interlocuteur);
+            }
+            this.updateUnreadMessagesAndLastMessage();
         });
 
         // Subscribe to the list of connected users
@@ -81,21 +87,37 @@ export class ChatComponent implements OnInit, AfterViewChecked {
 
     sendMessage() {
         this.message.sender = this.userId;
-        this.message.recipient=this.interlocuteur.id
+        this.message.recipient = this.interlocuteur.id;
         this.webSocketService.sendMessage(this.message);
         this.message.content = '';
     }
 
     chatWithInterlocuterur(user: User) {
-        this.interlocuteur=user;
-        this.interlocuteurMessages=this.messages.filter(e=>e.recipient==this.interlocuteur.id||
-            e.sender==this.interlocuteur.id)
-        console.log(this.interlocuteurMessages);
-        this.interlocuteurMessages.filter(e=>e.recipient==this.userId).map(e=>{
-            e.seen=false;this.chatService.setMessageSeen(e.id).subscribe()
-        })
-        this.unseenMessageNumber=this.messages.filter(e=>e.recipient==this.userId &&
-        e.seen==false).length;
-        console.log(this.interlocuteurMessages);
+        this.interlocuteur = user;
+        this.interlocuteurMessages = this.messages.filter(e => e.recipient == this.interlocuteur.id ||
+            e.sender == this.interlocuteur.id);
+        this.interlocuteurMessages.filter(e => e.recipient == this.userId).map(e => {
+            e.seen = true;
+            this.chatService.setMessageSeen(e.id).subscribe();
+        });
+
+        this.updateUnreadMessagesAndLastMessage();
     }
+
+
+    updateUnreadMessagesAndLastMessage(): void {
+        this.unseenMessageNumber = 0;
+        this.userList.map(user => {
+            user.unreadMessages = this.messages.filter(
+                message => message.sender === user.id && !message.seen
+            ).length;
+            if (user.unreadMessages != 0) {
+                user.lastMessager = this.messages
+                    .filter(message => message.sender === user.id)
+                    .pop();
+                this.unseenMessageNumber += user.unreadMessages;
+            }
+        })
+    }
+
 }

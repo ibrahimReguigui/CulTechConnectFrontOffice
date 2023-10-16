@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {KeycloakService} from 'keycloak-angular';
 
 @Component({
   selector: 'app-navbar-style-four',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar-style-four.component.scss']
 })
 export class NavbarStyleFourComponent implements OnInit {
+    @Input() unseenMessageNumber:number;
+    constructor(private keycloak:KeycloakService) { }
+    authenticated:boolean;
+    ngOnInit(): void {
+        this.authenticated=this.keycloak.getKeycloakInstance().authenticated
+    }
 
-  constructor() { }
+    login() {
+        this.keycloak.login();
+    }
 
-  ngOnInit(): void {
-  }
-
+    logout() {
+        this.keycloak.logout();
+    }
 }

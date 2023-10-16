@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/1.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/10.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/11.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/12.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/15.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/15.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/16.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/16.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/2.pack" afterDir="false" />
@@ -22,12 +21,10 @@
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/chat/chat.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/chat/chat.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/chat/chat.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/chat/chat.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/chat/chat.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/chat/chat.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/models/message.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/message.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/chat/chat.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/chat/webSocket.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/chat/chat.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/chat/webSocket.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/navbar-style-four/navbar-style-four.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/navbar-style-four/navbar-style-four.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/navbar-style-four/navbar-style-four.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/navbar-style-four/navbar-style-four.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/models/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +125,7 @@
       <workItem from="1697113020785" duration="18917000" />
       <workItem from="1697194892561" duration="16726000" />
       <workItem from="1697386103748" duration="374000" />
+      <workItem from="1697449394963" duration="12894000" />
     </task>
     <servers />
   </component>
