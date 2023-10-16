@@ -18,7 +18,10 @@ export class UserService {
         const token = this.keycloakService.getKeycloakInstance().token;
         return new HttpHeaders().set('Authorization', `Bearer ${token}`);
     }
-
+    getProfile(): Observable<User> {
+        let headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.getAuthHeaders());
+        return this.http.get<User>(this.url + '/profile/getUserProfile', { headers });
+    }
     getAllUser(): Observable<User[]> {
         let headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.getAuthHeaders());
         return this.http.get<User[]>(this.url + '/getAllUser', { headers });

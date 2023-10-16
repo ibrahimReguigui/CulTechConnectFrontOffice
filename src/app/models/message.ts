@@ -4,4 +4,6 @@ export class Message{
     recipient:string;
     content:string;
     time:string;
+    read:boolean
+    seen:boolean;
 }
