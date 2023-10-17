@@ -19,14 +19,20 @@ import { ComingSoonComponent } from './components/pages/coming-soon/coming-soon.
 import { ServicesComponent } from './components/pages/services/services.component';
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { BlogComponent } from './components/pages/blog/blog.component';
-import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
+import { ProfileComponent } from './components/pages/profile/profile.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import {AuthGuard} from './security/AuthGuard';
 import {EditProfileComponent} from './components/pages/edit-profile/edit-profile.component';
 import {ChatComponent} from './chat/chat.component';
+import {CreateBlogComponent} from './components/pages/create-blog/create-blog.component';
+import {BlogDetailsComponent} from './components/pages/blog-details/blog-details.component';
+import {UpdateBlogComponent} from './components/pages/update-blog/update-blog.component';
 
 const routes: Routes = [
     {path: '', component: SeoAgencyComponent},
+    {path: 'create-blog', component: CreateBlogComponent},
+    {path: 'update-blog/:blogId', component: UpdateBlogComponent},
+    { path: 'blog-details/:blogId', component: BlogDetailsComponent },
     {path: 'ai-startup', component: AiStartupComponent},
     {path: 'machine-learning', component: MachineLearningComponent},
     {path: 'about', component: AboutComponent},
@@ -45,7 +51,7 @@ const routes: Routes = [
     {path: 'services', component: ServicesComponent},
     {path: 'services-details', component: ServicesDetailsComponent},
     {path: 'blog', component: BlogComponent},
-    {path: 'profile', component: BlogDetailsComponent, canActivate: [AuthGuard]},
+    {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
     {path: 'contact', component: ContactComponent},
     {path: 'edit-profile', component: EditProfileComponent},
     {path: 'chat', component: ChatComponent, canActivate: [AuthGuard]},

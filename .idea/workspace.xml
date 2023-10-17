@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5be9d8d-168d-4969-8b66-a26342155241" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/0.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/1.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/10.pack" afterDir="false" />
@@ -18,6 +19,33 @@
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack.old" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/11.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/13.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/14.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/15.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/15.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/16.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/16.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/17.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/17.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/18.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/18.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/19.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/19.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/4.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/6.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/8.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/services/file-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/services/file-service.service.ts" afterDir="false" />
+>>>>>>> nadine
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +63,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -50,20 +79,45 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\33646\\Desktop\\CulTechConnect_Front-master\\CulTechConnectFrontOffice\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/cultechconnect/back/CulTechConnect-ibrahim/CulTechConnect-ibrahim",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.protractor.protractor_package": "C:/Users/33646/Desktop/CulTechConnect_Front-master/node_modules/protractor",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "E:\\cultechconnect\\frontoffice\\CulTechConnectFrontOffice\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+>>>>>>> nadine
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\models" />
+=======
+      <recent name="E:\cultechconnect\frontoffice\CulTechConnectFrontOffice" />
+>>>>>>> nadine
       <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master" />
       <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app" />
       <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app" />
       <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\services\chat" />
       <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\models" />
       <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\chat" />
+=======
+      <recent name="E:\cultechconnect\frontoffice\CulTechConnectFrontOffice\src\app\components\pages" />
+>>>>>>> nadine
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
@@ -112,6 +166,7 @@
       <workItem from="1696589568068" duration="250000" />
       <workItem from="1696591654595" duration="1218000" />
       <workItem from="1696597007721" duration="613000" />
+<<<<<<< HEAD
       <workItem from="1696597638077" duration="299000" />
       <workItem from="1696670832260" duration="4319000" />
       <workItem from="1696941959921" duration="14077000" />
@@ -119,6 +174,14 @@
       <workItem from="1697113020785" duration="18917000" />
       <workItem from="1697477565125" duration="1536000" />
       <workItem from="1697535517052" duration="849000" />
+=======
+      <workItem from="1696957313316" duration="1389000" />
+      <workItem from="1697016740123" duration="4000" />
+      <workItem from="1697022412840" duration="72000" />
+      <workItem from="1697111863880" duration="4394000" />
+      <workItem from="1697117428338" duration="4234000" />
+      <workItem from="1697130537020" duration="52502000" />
+>>>>>>> nadine
     </task>
     <servers />
   </component>
