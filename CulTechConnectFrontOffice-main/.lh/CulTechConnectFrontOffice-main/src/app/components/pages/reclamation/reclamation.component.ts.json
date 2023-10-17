@@ -1,0 +1,26 @@
+{
+    "sourceFile": "CulTechConnectFrontOffice-main/src/app/components/pages/reclamation/reclamation.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1697539126203,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697539143330,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Component, OnInit } from '@angular/core';\n-import {re}\n+import {rec}\n @Component({\n   selector: 'app-reclamation',\n   templateUrl: './reclamation.component.html',\n   styleUrls: ['./reclamation.component.scss']\n"
+                },
+                {
+                    "date": 1697543040498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,49 @@\n+import { Component, OnInit } from '@angular/core';\n+import { ReclamationService } from '../../services/reclamation.service';\n+\n+@Component({\n+  selector: 'app-reclamation',\n+  templateUrl: './reclamation.component.html',\n+  styleUrls: ['./reclamation.component.scss']\n+})\n+export class ReclamationComponent implements OnInit {\n+\n+  reclamation: any = {}; \n+  reclamationRequests: any[] = []; \n+  showThankYouPopup: boolean = false;\n+\n+\n+  constructor(private reclamationService: ReclamationService) { }\n+\n+  ngOnInit(): void {\n+    this.loadReclamationRequests();\n+  }\n+\n+  onSubmit() {\n+    // Submit the reclamation request to the service\n+    this.reclamationService.submitReclamation(this.reclamation).subscribe((response) => {\n+      // Clear the form and refresh the list of requests\n+      this.showThankYouPopup = true;\n+      this.reclamation = {};\n+\n+\n+       setTimeout(() => {\n+        this.showThankYouPopup = false;\n+      }, 5000); */\n+\n+    });\n+  }\n+\n+  closePopup() {\n+    // Method to close the popup\n+    this.showThankYouPopup = false;\n+  }\n+\n+  loadReclamationRequests() {\n+    // Fetch reclamation requests from the service\n+    this.reclamationService.getReclamationRequests().subscribe((requests) => {\n+      this.reclamationRequests = requests;\n+    });\n+  }\n+\n+}\n"
+                }
+            ],
+            "date": 1697539126203,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\nimport \n@Component({\n  selector: 'app-reclamation',\n  templateUrl: './reclamation.component.html',\n  styleUrls: ['./reclamation.component.scss']\n})\nexport class ReclamationComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n"
+        }
+    ]
+}

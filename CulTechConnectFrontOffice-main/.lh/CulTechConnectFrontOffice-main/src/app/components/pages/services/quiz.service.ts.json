@@ -1,0 +1,42 @@
+{
+    "sourceFile": "CulTechConnectFrontOffice-main/src/app/components/pages/services/quiz.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1697490519479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1697490633796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import { Injectable } from '@angular/core';\n+import { HttpClient } from '@angular/common/http';\n+import { Observable } from 'rxjs';\n+import { Question } from '../question/question.component' ;\n+\n+@Injectable({\n+  providedIn: 'root'\n+})\n+export class QuizService {\n+  private quizUrl = 'api/quiz';\n+  constructor(private http: HttpClient) { }\n+\n+  getQuestions(): Observable<question[]> {\n+    return this.http.get<question[]>(this.quizUrl);\n+  }\n+}\n"
+                },
+                {
+                    "date": 1697490639991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,24 +9,8 @@\n export class QuizService {\n   private quizUrl = 'api/quiz';\n   constructor(private http: HttpClient) { }\n \n-  getQuestions(): Observable<question[]> {\n-    return this.http.get<question[]>(this.quizUrl);\n+  getQuestions(): Observable<Question[]> {\n+    return this.http.get<Question[]>(this.quizUrl);\n   }\n }\n-import { Injectable } from '@angular/core';\n-import { HttpClient } from '@angular/common/http';\n-import { Observable } from 'rxjs';\n-import { question } from '../question/question.component' ;\n-\n-@Injectable({\n-  providedIn: 'root'\n-})\n-export class QuizService {\n-  private quizUrl = 'api/quiz';\n-  constructor(private http: HttpClient) { }\n-\n-  getQuestions(): Observable<question[]> {\n-    return this.http.get<question[]>(this.quizUrl);\n-  }\n-}\n"
+                },
+                {
+                    "date": 1697492070498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { Injectable } from '@angular/core';\n import { HttpClient } from '@angular/common/http';\n import { Observable } from 'rxjs';\n-import { Question } from '../question/question.component' ;\n+import { Question } from '../' ;\n \n @Injectable({\n   providedIn: 'root'\n })\n"
+                },
+                {
+                    "date": 1697492075583,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import { Injectable } from '@angular/core';\n+import { HttpClient } from '@angular/common/http';\n+import { Observable } from 'rxjs';\n+import { Question } from '../' ;\n+\n+@Injectable({\n+  providedIn: 'root'\n+})\n+export class QuizService {\n+  private quizUrl = 'api/quiz';\n+  constructor(private http: HttpClient) { }\n+\n+  getQuestions(): Observable<Question[]> {\n+    return this.http.get<Question[]>(this.quizUrl);\n+  }\n+}\n"
+                },
+                {
+                    "date": 1697492081578,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { Injectable } from '@angular/core';\n import { HttpClient } from '@angular/common/http';\n import { Observable } from 'rxjs';\n-import { Question } from '../../' ;\n+import { Question } from '../../models' ;\n \n @Injectable({\n   providedIn: 'root'\n })\n"
+                },
+                {
+                    "date": 1697493981253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,60 @@\n+import { Injectable } from '@angular/core';\n+import { HttpClient } from '@angular/common/http';\n+import { Observable, of  } from 'rxjs';\n+//import { Question } from '../../models/Question' ;\n+\n+@Injectable({\n+  providedIn: 'root'\n+})\n+export class QuizService {\n+  private quizUrl = 'api/quiz';\n+  constructor(private http: HttpClient) { }\n+\n+  /* getQuestions(): Observable<Question[]> {\n+    return this.http.get<Question[]>(this.quizUrl);\n+  } */\n+\n+  getQuestions(): Observable<any[]> {\n+    return of([\n+      {\n+        text: 'What is the traditional Japanese art of folding paper into various shapes and designs?',\n+        choices: ['Origami', 'Sumi-e', 'Ikebana', 'Taiko'],\n+        correctAnswerIndex: 0\n+      },\n+      {\n+        text: 'Which country is famous for its colorful Diwali festival of lights?',\n+        choices: ['India', 'China', 'Mexico', 'Egypt'],\n+        correctAnswerIndex: 0\n+      },\n+      {\n+        text: 'In Greek mythology, who is the king of the gods?',\n+        choices: ['Poseidon', 'Hermes', 'Zeus', 'Hades'],\n+        correctAnswerIndex: 2\n+      },\n+      \n+      {\n+        text: 'What type of traditional music is often associated with the country of flamenco and bullfighting?',\n+        choices: ['Samba', 'Reggae', 'Hip-hop' ,'Flamenco' ],\n+        correctAnswerIndex: 3\n+      },\n+      {\n+        text: 'In which country can you find the historic city of Petra, known for its rock-cut architecture?',\n+        choices: ['Egypt', 'Greece', 'Jordan', 'Turkey'],\n+        correctAnswerIndex: 2\n+      },\n+\n+      {\n+        text: 'Which famous North African desert, covering parts of Tunisia, is known for its stunning landscapes, sand dunes, and unique Berber culture?',\n+        choices: ['Sahara Desert', 'Gobi Desert', 'Arabian Desert', 'Mojave Desert'],\n+        correctAnswerIndex: 0\n+      },\n+  \n+      {\n+        text: 'In Mexican cuisine, what is the name of the traditional dish made from corn dough filled with various ingredients and folded into a tortilla shape?',\n+        choices: ['Tacos', 'Chiles en Nogada', 'Quesadillas', 'Tamales'],\n+        correctAnswerIndex: 3\n+      }\n+    ]);\n+  }\n+\n+}\n"
+                }
+            ],
+            "date": 1697490519479,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\nimport { HttpClient } from '@angular/common/http';\nimport { Observable } from 'rxjs';\nimport { question } from '../question/question.component' ;\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class QuizService {\n  private quizUrl = 'api/quiz';\n  constructor(private http: HttpClient) { }\n\n  getQuestions(): Observable<question[]> {\n    return this.http.get<question[]>(this.quizUrl);\n  }\n}\n"
+        }
+    ]
+}

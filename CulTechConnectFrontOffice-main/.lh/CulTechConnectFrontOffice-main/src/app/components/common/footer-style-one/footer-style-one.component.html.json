@@ -1,0 +1,18 @@
+{
+    "sourceFile": "CulTechConnectFrontOffice-main/src/app/components/common/footer-style-one/footer-style-one.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1697501036726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1697501036726,
+            "name": "Commit-0",
+            "content": "<footer class=\"footer-area footer-bg pt-100 pb-70\">\n    <div class=\"container\">\n        <div class=\"footer-top\">\n            <div class=\"row align-items-center\">\n                <div class=\"col-lg-6 col-sm-6\">\n                    <div class=\"footer-img\">\n                        <img src=\"assets/cul.png\" alt=\"Images\">\n                    </div>\n                </div>\n\n                <div class=\"col-lg-6 col-sm-6\">\n                    <div class=\"footer-social-icon\">\n                        <ul class=\"social-link\">\n                            <li><a href=\"#\" target=\"_blank\"><i class='bx bxl-facebook'></i></a></li>\n                            <li><a href=\"#\" target=\"_blank\"><i class='bx bxl-twitter'></i></a></li>\n                            <li><a href=\"#\" target=\"_blank\"><i class='bx bxl-instagram'></i></a></li>\n                            <li><a href=\"#\" target=\"_blank\"><i class='bx bxl-pinterest-alt'></i></a></li>\n                            <li><a href=\"#\" target=\"_blank\"><i class='bx bxl-youtube'></i></a></li>\n                        </ul>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"footer-midal pt-45 pb-70\">\n            <div class=\"row\">\n                <div class=\"col-lg-2 col-sm-7\">\n                    <div class=\"footer-widget\">\n                        <h3>Entreprise</h3>\n\n                        <ul class=\"footer-list\">\n                            <li><a routerLink=\"/\">À propos CulTechConnect</a></li>\n                            <li><a routerLink=\"/\">Pour les clients</a></li>\n                            <li><a routerLink=\"/\">Blog et actualités SEO</a></li>\n                            <li><a routerLink=\"/\">Carrières et avis</a></li>\n                            <li><a routerLink=\"/\">Plan du site</a></li>\n                        </ul>\n                    </div>\n                </div>\n\n                <div class=\"col-lg-4 col-sm-7\">\n                    <div class=\"footer-widget\">\n                        <h3>Newsletter</h3>\n                        <p>Pour recevoir les dernières actualités et mises à jour de notre part</p>\n                        <div class=\"newsletter-area\">\n                            <form class=\"newsletter-form\">\n                                <input type=\"email\" class=\"form-control\" placeholder=\"Votre Email*\" name=\"EMAIL\" required autocomplete=\"off\">\n                                <button class=\"default-btn\" type=\"submit\">Abonnez-vous</button>\n                            </form>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n        <div class=\"copy-right-area\">\n            <div class=\"copy-right-text text-center\">\n                <p>Copyright @2021 CulTechConnect. All Rights Reserved by <a href=\"https://hibootstrap.com/\" target=\"_blank\">HiBootstrap</a> </p>\n            </div>\n        </div>\n    </div>\n</footer>\n"
+        }
+    ]
+}

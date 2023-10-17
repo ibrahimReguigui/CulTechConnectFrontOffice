@@ -1,0 +1,50 @@
+<app-navbar-style-four></app-navbar-style-four>
+<div class="inner-banner">
+    <div class="container">
+        <div class="inner-title text-center">
+            <h3>Quiz</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><i class='bx bx-chevron-right'></i></li>
+                <li>Quiz</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="quiz-container">
+      <div *ngIf="questions.length > 0">
+        <h2> Quiz Question {{ currentQuestionIndex + 1 }}</h2>
+        <p class="question-text">{{ questions[currentQuestionIndex].text }}</p>
+        
+        <p class="timer">{{ timerCountdown }}</p>
+
+        <ul class="answer-choices">
+          <li *ngFor="let answer of questions [currentQuestionIndex].choices; let i = index">
+            <label  [ngClass]="{
+        'selected-answer': i === userAnswer,
+        'correct-answer': i === questions[currentQuestionIndex].correctAnswerIndex && i === userAnswer,
+        'wrong-answer': i !== questions[currentQuestionIndex].correctAnswerIndex && i === userAnswer
+      }">
+              <input type="radio"
+                     name="answer"
+                     [value]="i"
+                     
+                     (change)="selectAnswer(i)">
+                     <span > {{ answer }} </span>
+            </label>
+          </li>
+        </ul>
+
+        <button (click)="nextQuestion()">Next</button>
+      
+
+      <div *ngIf="questions.length === 0">
+        <p *ngIf="!showScore">Quiz completed! Click the button to see your score.</p>
+        <p *ngIf="showScore">Your score is {{ score }}.</p>
+        <button (click)="showScore = true" *ngIf="!showScore">See Score</button>
+      </div>
+    </div>
+  </div>
+    
+      
+<app-footer-style-two></app-footer-style-two>

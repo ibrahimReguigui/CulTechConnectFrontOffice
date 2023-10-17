@@ -1,0 +1,56 @@
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; // 100% of the viewport height
+  }
+  
+  // Make the form container smaller
+  .form-container {
+    width: 300px; // Reduce the width
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  
+    .form-group label {
+      font-weight: bold;
+    }
+  
+    .form-group input[type="text"],
+    .form-group textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 16px;
+    }
+  
+    button[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      justify-content: center;
+    align-items: center;
+    }
+  }
+  
+  // Add margin to the list of reclamation requests
+  .reclamation-list {
+    margin-top: 20px;
+  
+    .reclamation-item {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 3px;
+      background-color: #fff;
+    }
+  }
+  
