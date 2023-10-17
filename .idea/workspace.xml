@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b5be9d8d-168d-4969-8b66-a26342155241" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/0.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/1.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/10.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/12.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/14.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/17.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/17.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/18.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/18.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/19.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/19.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/2.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/9.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack.old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2WFcNcOLtKgihx9BPRWvbTn4D7b" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.github.iguissouma.nxconsole.dontShowDeprecationNoticeAgain&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/33646/Desktop/CulTechConnect_Front-master/src/app/models&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.protractor.protractor_package&quot;: &quot;C:/Users/33646/Desktop/CulTechConnect_Front-master/node_modules/protractor&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\33646\\Desktop\\CulTechConnect_Front-master\\CulTechConnectFrontOffice\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\models" />
+      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master" />
+      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app" />
+      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app" />
+      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\services\chat" />
+      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\models" />
+      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\chat" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Tests (ribo-ng)" type="JavaScriptTestRunnerKarma">
+      <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="E2E Tests (ribo-ng)" type="JavaScriptTestRunnerProtractor">
+      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
+      <node-interpreter value="project" />
+      <protractor-package value="$PROJECT_DIR$/node_modules/protractor" />
+      <protractor-options value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b5be9d8d-168d-4969-8b66-a26342155241" name="Changes" comment="" />
+      <created>1696331729860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696331729860</updated>
+      <workItem from="1696331731058" duration="7306000" />
+      <workItem from="1696353612483" duration="27000" />
+      <workItem from="1696355705834" duration="739000" />
+      <workItem from="1696360517289" duration="1332000" />
+      <workItem from="1696589568068" duration="250000" />
+      <workItem from="1696591654595" duration="1218000" />
+      <workItem from="1696597007721" duration="613000" />
+      <workItem from="1696597638077" duration="299000" />
+      <workItem from="1696670832260" duration="4319000" />
+      <workItem from="1696941959921" duration="14077000" />
+      <workItem from="1697024501713" duration="13533000" />
+      <workItem from="1697113020785" duration="18917000" />
+      <workItem from="1697477565125" duration="1536000" />
+      <workItem from="1697535517052" duration="849000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
