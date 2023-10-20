@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { EventService } from '../../services/event.service';
 
 @Component({
     selector: 'app-case-study-details',
@@ -6,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./case-study-details.component.scss']
 })
 export class CaseStudyDetailsComponent implements OnInit {
+
+
+    eventId: number; // Variable pour stocker l'ID de l'événement
+    eventDetails: any; // 
+
+
     comments = [
         {
             author: 'Nadine Mili',
@@ -37,9 +45,19 @@ export class CaseStudyDetailsComponent implements OnInit {
             }]
         }
     };
-    constructor() { }
+    constructor(private route: ActivatedRoute, private eventService: EventService) { }
 
     ngOnInit(): void {
+
+           
+    this.eventId = +this.route.snapshot.paramMap.get('eventId');
+    console.log(this.eventId)
+
+    this.eventDetails = this.eventService.getEventDetails(this.eventId); 
+  
+
+
+
     }
     onLike(comment: any): void {
         comment.likes++;
