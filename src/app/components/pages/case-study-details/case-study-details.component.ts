@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { EventService } from '../../services/event.service';
 
@@ -8,7 +8,7 @@ import { EventService } from '../../services/event.service';
     styleUrls: ['./case-study-details.component.scss']
 })
 export class CaseStudyDetailsComponent implements OnInit {
-
+    @Input() selectedItem: any;
 
     eventId: number; // Variable pour stocker l'ID de l'événement
     eventDetails: any; // 
@@ -49,9 +49,9 @@ export class CaseStudyDetailsComponent implements OnInit {
 
     ngOnInit(): void {
 
-           
+        console.log(this.selectedItem);    
     this.eventId = +this.route.snapshot.paramMap.get('eventId');
-    console.log(this.eventId)
+    
 
     this.eventDetails = this.eventService.getEventDetails(this.eventId); 
   
