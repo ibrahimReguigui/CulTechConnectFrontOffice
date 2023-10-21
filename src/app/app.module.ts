@@ -56,6 +56,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
             }
         });
 }
+
 @NgModule({
   declarations: [
     AppComponent,

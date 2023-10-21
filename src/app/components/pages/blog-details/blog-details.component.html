@@ -77,7 +77,7 @@
                         </li>
 
                     </ul>
-            </div>
+                </div>
                 <button type="button" class="btn btn-primary mt-3" (click)="goToUpdateBlog(blog.id)">
                     Mettre à jour le Blog
                 </button>
@@ -85,17 +85,16 @@
         </div>
     </div>
 </div>
-
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <h2 class="text-center mb-4">Vos commentaires</h2>
             <p class="text-center">Nous attachons de l'importance à vos retours. Merci de nous faire part de votre expérience lors de l'événement.</p>
 
-            <form class="mb-4">
+            <form class="mb-4" (ngSubmit)="createComment()">
                 <div class="form-group">
                     <label for="feedback">Votre commentaire :</label>
-                    <textarea id="feedback" name="feedback" rows="4" class="form-control"></textarea>
+                    <textarea id="feedback" name="feedback" rows="4" class="form-control" [(ngModel)]="newComment.content" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Soumettre Vos Commentaires</button>
             </form>
@@ -109,50 +108,18 @@
                     <div class="comment-content">
                         <div class="comment-header">
                             <span class="comment-author">{{ comment.author }}</span>
-                            <span class="comment-time">Il y a quelques instants</span>
+                            <span class="comment-time">{{ getTimeAgo(comment.dateAdded) }}</span>
                         </div>
                         <p>{{ comment.content }}</p>
-                        <button class="btn-like">
-                            <i class="far fa-thumbs-up"></i> J'aime
-                        </button>
-                        <button class="btn-dislike" (click)="dislikeComment(comment)">
-                            <i class="far fa-thumbs-down"></i> Je n'aime pas
-                        </button>
-                        <button class="btn-comment">
-                            <i class="far fa-comment"></i> Commenter
+                        <button class="btn-delete" (click)="deleteComment(comment.id)">
+                            <i class="far fa-trash-alt"></i> Supprimer le commentaire
                         </button>
                     </div>
-                </div>
-            </div>
-
-
-        </div>
-
-        <div class="col-md-4">
-            <div class="ratings-section">
-                <h3 class="text-center mb-3">Évaluation :</h3>
-                <p class="text-center">Évaluez cet événement en donnant un nombre d'étoiles :</p>
-                <div class="star-rating text-center">
-                    <input type="radio" id="star5" name="rating" value="5">
-                    <label for="star5"><i class="fas fa-star"></i></label>
-                    <input type="radio" id="star4" name="rating" value="4">
-                    <label for="star4"><i class="fas fa-star"></i></label>
-                    <input type="radio" id="star3" name="rating" value="3">
-                    <label for="star3"><i class="fas fa-star"></i></label>
-                    <input type="radio" id="star2" name="rating" value="2">
-                    <label for="star2"><i class="fas fa-star"></i></label>
-                    <input type="radio" id="star1" name="rating" value="1">
-                    <label for="star1"><i class="fas fa-star"></i></label>
-                </div>
-                <div class="text-center mt-3">
-                    <h4>Statistique d'évaluation :</h4>
-                    <p>Moyenne des évaluations : {{ calculateAverageRating() }}</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 
 
 <div class="brand-logo-area pt-100">
