@@ -1,0 +1,113 @@
+<app-navbar-style-four></app-navbar-style-four>
+<div class="inner-banner">
+   <div class="container">
+       <div class="inner-title text-center">
+           <h3>Payement</h3>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><i class='bx bx-chevron-right'></i></li>
+               <li>Payement</li>
+           </ul>
+       </div>
+   </div>
+
+   <div class="inner-banner-shape">
+       <div class="shape-one"><img src="assets/img/inner-banner/banner-shape1.png" alt="Images"></div>
+       <div class="shape-two"><img src="assets/img/inner-banner/banner-shape2.png" alt="Images"></div>
+       <div class="shape-three"><img src="assets/img/inner-banner/banner-shape3.png" alt="Images"></div>
+       <div class="inner-banner-dots"><img src="assets/img/shape/dots-shape.png" alt="Images"></div>
+   </div>
+</div>
+
+
+<div class="container">
+   <h2>  Faire Payment</h2>
+     <div class="form-group">
+       <label for="Name_on_Card">Name on Card</label>
+       <input type="text" class="form-control" id="Name_on_Card" name="Name_on_Card" [(ngModel)]="newPayment.name_on_Card" required />
+      </div>
+ 
+     <div class="form-group">
+       <label for="Card_Number">Card Number</label>
+       <input
+         type="text"
+         class="form-control"
+         id="Card_Number"
+         name="Card_Number"
+         [(ngModel)]="newPayment.card_Number"
+         required
+       />
+     </div>
+ 
+     <div class="form-row">
+       <div class="form-group col-md-6">
+         <label for="MM">MM</label>
+         <input
+           type="text"
+           class="form-control"
+           id="MM"
+           name="MM"
+           [(ngModel)]="newPayment.mm"
+           required
+         />
+       </div>
+       <div class="form-group col-md-6">
+         <label for="YY">YY</label>
+         <input
+           type="text"
+           class="form-control"
+           id="YY"
+           name="YY"
+           [(ngModel)]="newPayment.yy"
+           required
+         />
+       </div>
+     </div>
+ 
+     <div class="form-group">
+       <label for="CVV">CVV</label>
+       <input
+         type="text"
+         class="form-control"
+         id="CVV"
+         name="CVV"
+         [(ngModel)]="newPayment.cvv"
+         required
+       />
+     </div>
+ 
+     <div class="form-group">
+       <label for="montant">Montant</label>
+       <input
+         type="number"
+         class="form-control"
+         id="montant"
+         name="montant"
+         [value]="newPayment.montant"
+         required
+         [disabled]="true"/>
+     </div>
+ 
+     <div class="form-group">
+      <label for="Country">Country</label>
+      <select
+        class="form-control flag flag-{{newPayment.country}}"
+        id="Country"
+        name="Country"
+        [(ngModel)]="newPayment.country"
+        required
+      >
+        <option value="TUNISIA">Tunisia</option>
+        <option value="PALESTINE">Palestine</option>
+        <!-- Add more options for other countries -->
+      </select>
+    </div>
+    
+   
+    
+ 
+   
+ 
+     <button type="submit"  (click)="addNewPayment()" class="btn btn-primary">Add Payment</button>
+ </div>
+ <app-footer-style-two></app-footer-style-two> 

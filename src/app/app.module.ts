@@ -36,6 +36,11 @@ import {KeycloakAngularModule, KeycloakService} from 'keycloak-angular';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { EditProfileComponent } from './components/pages/edit-profile/edit-profile.component';
 import { ChatComponent } from './chat/chat.component';
+import { EchangeComponent } from './components/pages/echange/echange.component';
+import { PayementComponent } from './components/pages/payement/payement.component';
+import { EchangeDetailsComponent } from './components/pages/echange-details/echange-details.component';
+import { ParticipantComponent } from './components/pages/participant/participant.component';
+
 
 function initializeKeycloak(keycloak: KeycloakService) {
     return () =>
@@ -86,7 +91,11 @@ function initializeKeycloak(keycloak: KeycloakService) {
     BlogComponent,
     ContactComponent,
     EditProfileComponent,
-    ChatComponent
+    ChatComponent,
+    EchangeComponent,
+    PayementComponent,
+    EchangeDetailsComponent,
+    ParticipantComponent
   ],
   imports: [
     BrowserModule,

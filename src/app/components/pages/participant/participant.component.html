@@ -1,0 +1,40 @@
+<app-navbar-style-four></app-navbar-style-four>
+<div class="inner-banner">
+   <div class="container">
+       <div class="inner-title text-center">
+           <h3>Participation</h3>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><i class='bx bx-chevron-right'></i></li>
+               <li>Programme</li>
+               <li><i class='bx bx-chevron-right'></i></li>
+               <li>Details Programme</li>
+               <li><i class='bx bx-chevron-right'></i></li>
+               <li>Participation</li>
+           </ul>
+       </div>
+   </div>
+
+   <div class="inner-banner-shape">
+       <div class="shape-one"><img src="assets/img/inner-banner/banner-shape1.png" alt="Images"></div>
+       <div class="shape-two"><img src="assets/img/inner-banner/banner-shape2.png" alt="Images"></div>
+       <div class="shape-three"><img src="assets/img/inner-banner/banner-shape3.png" alt="Images"></div>
+       <div class="inner-banner-dots"><img src="assets/img/shape/dots-shape.png" alt="Images"></div>
+   </div>
+</div>
+<div class="container">
+   <h2>Participer</h2>
+   <form [formGroup]="participantForm" (ngSubmit)="onSubmit()">
+      
+    
+      <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea   class="form-control" id="message" formControlName="message"></textarea>
+   </div>
+<br><br>
+      <button class="btn btn-primary" type="submit">Add Participant</button>
+    </form>
+
+</div>
+
+ <app-footer-style-two></app-footer-style-two> 

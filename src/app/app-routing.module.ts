@@ -24,6 +24,10 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import {AuthGuard} from './security/AuthGuard';
 import {EditProfileComponent} from './components/pages/edit-profile/edit-profile.component';
 import {ChatComponent} from './chat/chat.component';
+import { EchangeComponent } from './components/pages/echange/echange.component';
+import { PayementComponent } from './components/pages/payement/payement.component';
+import { EchangeDetailsComponent } from './components/pages/echange-details/echange-details.component';
+import { ParticipantComponent } from './components/pages/participant/participant.component';
 
 const routes: Routes = [
     {path: '', component: SeoAgencyComponent},
@@ -47,6 +51,14 @@ const routes: Routes = [
     {path: 'blog', component: BlogComponent},
     {path: 'profile', component: BlogDetailsComponent, canActivate: [AuthGuard]},
     {path: 'contact', component: ContactComponent},
+    {path: 'echange', component: EchangeComponent},
+    {path: 'payement', component: PayementComponent},
+    { path: 'echange/:id', component: EchangeDetailsComponent },
+    { path: 'demande/:echangeId', component: ParticipantComponent },
+
+
+
+
     {path: 'edit-profile', component: EditProfileComponent},
     {path: 'chat', component: ChatComponent, canActivate: [AuthGuard]},
     {path: '**', component: ErrorComponent}

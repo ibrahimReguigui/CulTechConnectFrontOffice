@@ -1,0 +1,49 @@
+<app-navbar-style-four></app-navbar-style-four>
+
+<div class="inner-banner">
+   <div class="container">
+       <div class="inner-title text-center">
+           <h3>Details Programme d'echange </h3>
+           <ul>
+               <li><a href="index.html">Acceuil</a></li>
+               <li><i class='bx bx-chevron-right'></i></li>
+               <li>Programme d'echange</li>
+               <li><i class='bx bx-chevron-right'></i></li>
+               <li>Details Programme d'echange</li>
+
+           </ul>
+       </div>
+   </div>
+
+   <div class="inner-banner-shape">
+       <div class="shape-one"><img src="assets/img/inner-banner/banner-shape1.png" alt="Images"></div>
+       <div class="shape-two"><img src="assets/img/inner-banner/banner-shape2.png" alt="Images"></div>
+       <div class="shape-three"><img src="assets/img/inner-banner/banner-shape3.png" alt="Images"></div>
+       <div class="inner-banner-dots"><img src="assets/img/shape/dots-shape.png" alt="Images"></div>
+   </div>
+</div>
+<div class="container">
+   <div class="row">
+     <div class="col-md-8 offset-md-2">
+       <div class="card">
+         <div class="card-body">
+           <h5 class="card-title">{{ echange?.nom }}</h5>
+           <p class="card-text"><strong>Description:</strong> {{ echange?.description }}</p>
+           <p class="card-text"><strong>Nombre de participant:</strong> {{ echange?.nbparticipant }}</p>
+           <p class="card-text"><strong>Date de début:</strong> {{ echange?.dateDebut }}</p>
+           <p class="card-text"><strong>Date de fin:</strong> {{ echange?.dateFin }}</p>
+           <p class="card-text"><strong>Pays:</strong> {{ echange?.pays }}</p>
+
+           <!-- You can add more details as needed --><br>
+ 
+           <a routerLink="/echange" class="btn btn-primary">Back to Echanges</a><br> <br>  
+           <a routerLink="/demande/{{echange.id}}" class="btn btn-secondary">Demande d'echange </a>
+
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+ <app-footer-style-two></app-footer-style-two>
+
+ 
