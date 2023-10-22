@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -23,9 +24,8 @@ export class EventService {
   getAllEvents() {
     return this.http.get<any[]>(`${this.baseUrl}/getAllEvents`);
   }
-  getEventDetails(idEvent: number) {
-    const url = `${this.baseUrl}/case-study-details/${idEvent}`;
-    return this.http.get(url);
+  getEventDetails(idEvent: number): Observable<any> {
+    return this.http.get('http://localhost:8097/event-details/'+idEvent);
   }
 
 }

@@ -13,7 +13,7 @@ export class CaseStudyComponent implements OnInit {
   @Output() itemSelected = new EventEmitter<any>();
 
   selectItem(item: any) {
-    this.router.navigate(['/case-study-details/:idEvent']);
+  //  this.router.navigate(['/case-study-details/:idEvent']);
    // this.itemSelected.emit(item);
     
     data : item;

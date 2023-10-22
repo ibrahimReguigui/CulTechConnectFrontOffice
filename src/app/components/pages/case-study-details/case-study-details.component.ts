@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { EventService } from '../../services/event.service';
+import { Event } from '../../models/Event';
 
 @Component({
     selector: 'app-case-study-details',
@@ -12,6 +13,7 @@ export class CaseStudyDetailsComponent implements OnInit {
 
     eventId: number; // Variable pour stocker l'ID de l'événement
     eventDetails: any; // 
+    event : Event;
 
 
     comments = [
@@ -45,20 +47,34 @@ export class CaseStudyDetailsComponent implements OnInit {
             }]
         }
     };
-    constructor(private route: ActivatedRoute, private eventService: EventService) { }
+    constructor(private route: ActivatedRoute, private eventService: EventService) {
+        
+            
+     }
+
+    
 
     ngOnInit(): void {
 
-        console.log(this.selectedItem);    
-    this.eventId = +this.route.snapshot.paramMap.get('eventId');
-    
 
-    this.eventDetails = this.eventService.getEventDetails(this.eventId); 
-  
+        this.route.params.subscribe(params => {
+            const id = params['idEvent'];
+            console.log(id);
+            this.getEventById(id)
+        });
 
 
 
     }
+
+    getEventById(idEvent : any) {
+        this.eventService.getEventDetails(idEvent).subscribe((x: any) => {
+            this.event=x;
+            console.log(this.event); 
+          });
+    
+    }
+
     onLike(comment: any): void {
         comment.likes++;
     }
