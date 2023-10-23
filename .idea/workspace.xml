@@ -5,47 +5,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5be9d8d-168d-4969-8b66-a26342155241" name="Changes" comment="">
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/10.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/10.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/12.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/14.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/17.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/17.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/18.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/18.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/19.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/19.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/2.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/2.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/9.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/ca5b7ca7ceb4f39ed849051652e6c1037913ba26/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/__ngcc_entry_points__.json" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/0.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/0.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/1.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/1.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/11.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/11.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/12.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/12.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/13.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/13.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/14.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/14.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/15.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/15.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/16.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/16.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/17.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/17.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/18.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/18.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/19.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/19.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/4.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/4.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/6.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/6.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/8.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/8.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/9.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/9.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack.old" beforeDir="false" afterPath="$PROJECT_DIR$/.angular/cache/angular-webpack/14750427ae38012a0bcda2d4591c499bc7cf8ee5/index.pack.old" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proxy.conf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/proxy.conf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/proxy.conf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/.browserslistrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/footer-style-one/footer-style-one.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/footer-style-one/footer-style-one.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/footer-style-two/footer-style-two.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/footer-style-two/footer-style-two.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/navbar-style-four/navbar-style-four.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/navbar-style-four/navbar-style-four.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/navbar-style-one/navbar-style-one.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/navbar-style-one/navbar-style-one.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/navbar-style-one/navbar-style-one.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/navbar-style-one/navbar-style-one.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/navbar-style-three/navbar-style-three.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/navbar-style-three/navbar-style-three.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/navbar-style-two/navbar-style-two.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/navbar-style-two/navbar-style-two.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/preloader/preloader.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/preloader/preloader.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/common/preloader/preloader.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/common/preloader/preloader.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/models/UserDto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/models/UserDto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/models/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/about/about.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/about/about.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/ai-startup/ai-startup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/ai-startup/ai-startup.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/ai-startup/ai-startup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/ai-startup/ai-startup.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog-details/blog-details.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/blog/blog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/services/file-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/services/file-service.service.ts" afterDir="false" />
->>>>>>> nadine
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/case-study/case-study.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/case-study/case-study.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/coming-soon/coming-soon.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/coming-soon/coming-soon.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/coming-soon/coming-soon.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/coming-soon/coming-soon.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/contact/contact.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/contact/contact.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/edit-profile/edit-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/edit-profile/edit-profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/edit-profile/edit-profile.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/edit-profile/edit-profile.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/edit-profile/edit-profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/edit-profile/edit-profile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/error/error.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/error/error.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/error/error.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/error/error.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/faq/faq.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/faq/faq.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/faq/faq.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/faq/faq.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/machine-learning/machine-learning.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/machine-learning/machine-learning.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/machine-learning/machine-learning.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/machine-learning/machine-learning.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/pricing/pricing.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/pricing/pricing.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/privacy-policy/privacy-policy.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/privacy-policy/privacy-policy.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/privacy-policy/privacy-policy.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/privacy-policy/privacy-policy.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/seo-agency/seo-agency.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/seo-agency/seo-agency.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/services-details/services-details.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/services-details/services-details.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/services-details/services-details.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/services-details/services-details.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/services/services.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/services/services.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/sign-up/sign-up.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/sign-up/sign-up.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/sign-up/sign-up.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/sign-up/sign-up.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/team/team.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/team/team.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/terms-conditions/terms-conditions.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/terms-conditions/terms-conditions.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/terms-conditions/terms-conditions.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/terms-conditions/terms-conditions.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/testimonials/testimonials.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/testimonials/testimonials.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/pages/testimonials/testimonials.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/pages/testimonials/testimonials.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/services/auth-service.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/services/auth-service.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/services/auth-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/services/auth-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/animate.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/animate.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/flaticon.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/flaticon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/Flaticon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/Flaticon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/fonts/boxicons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/fonts/boxicons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/js/meanmenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/js/meanmenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/responsive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,66 +98,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.github.iguissouma.nxconsole.dontShowDeprecationNoticeAgain&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/33646/Desktop/CulTechConnect_Front-master/src/app/models&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.protractor.protractor_package&quot;: &quot;C:/Users/33646/Desktop/CulTechConnect_Front-master/node_modules/protractor&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\33646\\Desktop\\CulTechConnect_Front-master\\CulTechConnectFrontOffice\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/cultechconnect/back/CulTechConnect-ibrahim/CulTechConnect-ibrahim",
+    "last_opened_file_path": "C:/Users/33646/Desktop/CulTechConnect_Front-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs.protractor.protractor_package": "C:/Users/33646/Desktop/CulTechConnect_Front-master/node_modules/protractor",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "E:\\cultechconnect\\frontoffice\\CulTechConnectFrontOffice\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\33646\\Desktop\\CulTechConnect_Front-master\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
->>>>>>> nadine
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-<<<<<<< HEAD
-      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\models" />
-=======
-      <recent name="E:\cultechconnect\frontoffice\CulTechConnectFrontOffice" />
->>>>>>> nadine
       <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master" />
       <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app" />
       <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-<<<<<<< HEAD
-      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app" />
-      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\services\chat" />
-      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\models" />
-      <recent name="C:\Users\33646\Desktop\CulTechConnect_Front-master\src\app\chat" />
-=======
-      <recent name="E:\cultechconnect\frontoffice\CulTechConnectFrontOffice\src\app\components\pages" />
->>>>>>> nadine
     </key>
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Tests (ribo-ng)" type="JavaScriptTestRunnerKarma">
       <config-file value="$PROJECT_DIR$/karma.conf.js" />
+      <karma-package-dir value="$PROJECT_DIR$/node_modules/@angular/cli" />
       <working-directory value="$PROJECT_DIR$" />
       <node-interpreter value="project" />
       <envs />
@@ -166,49 +168,10 @@
       <workItem from="1696589568068" duration="250000" />
       <workItem from="1696591654595" duration="1218000" />
       <workItem from="1696597007721" duration="613000" />
-<<<<<<< HEAD
-      <workItem from="1696597638077" duration="299000" />
-      <workItem from="1696670832260" duration="4319000" />
-      <workItem from="1696941959921" duration="14077000" />
-      <workItem from="1697024501713" duration="13533000" />
-      <workItem from="1697113020785" duration="18917000" />
-      <workItem from="1697477565125" duration="1536000" />
-      <workItem from="1697535517052" duration="849000" />
-=======
-      <workItem from="1696957313316" duration="1389000" />
-      <workItem from="1697016740123" duration="4000" />
-      <workItem from="1697022412840" duration="72000" />
-      <workItem from="1697111863880" duration="4394000" />
-      <workItem from="1697117428338" duration="4234000" />
-      <workItem from="1697130537020" duration="52502000" />
->>>>>>> nadine
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>
