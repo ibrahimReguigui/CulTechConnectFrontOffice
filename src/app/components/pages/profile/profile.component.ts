@@ -24,7 +24,7 @@ export class ProfileComponent implements OnInit {
     constructor(private authService: AuthServiceService,
                 private router: Router,
                 private readonly keycloak: KeycloakService) { }
-userDto:UserDto;
+userDto:UserDto=new UserDto();
   ngOnInit(): void {
       this.authService.getProfile().subscribe(res => {
           this.userDto=res
