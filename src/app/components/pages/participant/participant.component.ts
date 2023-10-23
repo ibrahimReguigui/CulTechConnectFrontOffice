@@ -5,6 +5,7 @@ import { ParticipantService } from './participant.service';
 import { Participant } from './participant.model';
 import { Echange } from '../echange/echange.model';
 import { UserService } from 'src/app/services/user/user.service';
+import { EchangeService } from '../echange/echange.service';
 
 @Component({
   selector: 'app-participant',
@@ -14,12 +15,15 @@ import { UserService } from 'src/app/services/user/user.service';
 export class ParticipantComponent implements OnInit {
   participantForm: FormGroup;
   participant:Participant;
+  echanges: Echange[];
+
 
   constructor(
     private formBuilder: FormBuilder,
     private participantService: ParticipantService,
     private route: ActivatedRoute,
-    private userService: UserService // Inject your user service
+    private userService: UserService ,
+    private echangeService: EchangeService// Inject your user service
     // Inject ActivatedRoute
   ) {
     this.participantForm = this.formBuilder.group({
@@ -64,6 +68,12 @@ export class ParticipantComponent implements OnInit {
 
       this.participantService.createParticipant(this.participant).subscribe((participant) => {
         console.log('Participant added:', participant);
+        this.echangeService.participate(this.route.snapshot.params['echangeId']).subscribe((exchange) => {
+          const index = this.echanges.findIndex((e) => e.id === exchange.id);
+          if (index !== -1) {
+            this.echanges[index] = exchange;
+          }
+        });
         // You can navigate to a different page or perform other actions after adding the participant
       });
     }

@@ -13,7 +13,7 @@ export class EchangeComponent implements OnInit {
 
 
   echanges: Echange[];
-  pageSize = 6; // Number of items to display per page
+  pageSize = 3; // Number of items to display per page
   currentPage = 1;
 
   constructor(private echangeService: EchangeService) { }
@@ -24,13 +24,6 @@ export class EchangeComponent implements OnInit {
     });  
 
   }
-  participate(id: number) {
-    this.echangeService.participate(id).subscribe((exchange) => {
-      const index = this.echanges.findIndex((e) => e.id === exchange.id);
-      if (index !== -1) {
-        this.echanges[index] = exchange;
-      }
-    });
-  }
+ 
 
 }
