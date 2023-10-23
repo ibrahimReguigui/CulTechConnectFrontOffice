@@ -41,7 +41,7 @@ const routes: Routes = [
     {path: 'faq', component: FaqComponent},
     {path: 'testimonials', component: TestimonialsComponent},
     {path: 'case-study', component: CaseStudyComponent},
-    {path: 'case-study-details', component: CaseStudyDetailsComponent},
+    {path: 'case-study-details/:idEvent', component: CaseStudyDetailsComponent},
     {path: 'error', component: ErrorComponent},
     {path: 'sign-in', component: SignInComponent},
     {path: 'sign-up', component: SignUpComponent},
