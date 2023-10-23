@@ -60,6 +60,18 @@ export class QuizService {
           choices: ['Kenya', 'Tanzania', 'Uganda', 'Rwanda'],
           correctAnswerIndex: 3
         
+      },
+
+      {
+        text: "What is the national sport of India?",
+        choices: ["Cricket", "Soccer", "Basketball", "Tennis"],
+        correctAnswerIndex: 0
+      },
+      
+      {
+        text: "What is the traditional greeting in Japan?",
+        choices: ["Hola", "Namaste", "Konnichiwa", "Bonjour"],
+        correctAnswerIndex: 2
       }
 
     ]);
