@@ -1,0 +1,6 @@
+
+Mtypescript:S1128"1Remove this unused import of 'HttpErrorResponse'.(¥Ù¬¶
+Ftypescript:S1128"*Remove this unused import of 'throwError'.(Î¡¾Ü
+Ktypescript:S1128"*Remove this unused import of 'catchError'.(«‰—„ùÿÿÿÿ
+Vtypescript:S1854"5Remove this useless assignment to variable "headers".(ðÌÓ–øÿÿÿÿ
+mtypescript:S6551"L'this.getAuthHeaders()' will evaluate to '[object Object]' when stringified.(ðÌÓ–øÿÿÿÿ

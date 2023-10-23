@@ -44,14 +44,14 @@
                             <i class="flaticon-telephone"></i>
                             <div class="content">
                                 <h3>Propriétaire du blog </h3>
-                                <span>ThenCary</span>
+                                <span>{{ loggedInUser.firstName }} {{ loggedInUser.lastName }}</span>
                             </div>
                         </li>
                         <li>
                             <i class="flaticon-tick"></i>
                             <div class="content">
                                 <h3>Quand ?</h3>
-                                <span>26 Avril 2024</span>
+                                <span>{{ blog.createdOn | date: 'longDate' }}</span>
                             </div>
                         </li>
                         <li>
@@ -103,12 +103,12 @@
                 <h3>Commentaires :</h3>
                 <div class="comment" *ngFor="let comment of comments">
                     <div class="comment-avatar">
-                        <img [src]="comment.image" [alt]="comment.author">
+                        <img [src]="comment.image" >
                     </div>
                     <div class="comment-content">
                         <div class="comment-header">
-                            <span class="comment-author">{{ comment.author }}</span>
-                            <span class="comment-time">{{ getTimeAgo(comment.dateAdded) }}</span>
+                            <span class="comment-author">{{ loggedInUser.firstName }} {{ loggedInUser.lastName }}</span>
+
                         </div>
                         <p>{{ comment.content }}</p>
                         <button class="btn-delete" (click)="deleteComment(comment.id)">

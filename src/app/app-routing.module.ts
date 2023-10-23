@@ -29,9 +29,9 @@ import {UpdateBlogComponent} from './components/pages/update-blog/update-blog.co
 
 const routes: Routes = [
     {path: '', component: SeoAgencyComponent},
-    {path: 'create-blog', component: CreateBlogComponent},
-    {path: 'update-blog/:blogId', component: UpdateBlogComponent},
-    { path: 'blog-details/:blogId', component: BlogDetailsComponent },
+    {path: 'create-blog', component: CreateBlogComponent , canActivate: [AuthGuard]},
+    {path: 'update-blog/:blogId', component: UpdateBlogComponent , canActivate: [AuthGuard]},
+    { path: 'blog-details/:blogId', component: BlogDetailsComponent, canActivate: [AuthGuard]},
     {path: 'ai-startup', component: AiStartupComponent},
     {path: 'machine-learning', component: MachineLearningComponent},
     {path: 'about', component: AboutComponent},

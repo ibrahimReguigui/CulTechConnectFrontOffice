@@ -5,6 +5,8 @@ import { UserDto } from '../../models/UserDto';
 import { Router } from '@angular/router';
 import { AuthServiceService } from '../../services/auth-service.service';
 import { FileServiceService } from '../../services/file-service.service';
+import {KeycloakService} from 'keycloak-angular';
+import {KeycloakProfile} from 'keycloak-js';
 
 @Component({
     selector: 'app-create-blog',
@@ -20,12 +22,17 @@ export class CreateBlogComponent implements OnInit {
     blogForm: FormGroup;
 
     selectedFiles: FileList | null = null;
+
+    userId: string;
+
+    loggedInUser: KeycloakProfile;
     constructor(
         private formBuilder: FormBuilder,
         private router: Router,
         private blogService: BlogServiceService,
         private authService: AuthServiceService,
-        private fileService: FileServiceService
+        private fileService: FileServiceService,
+        private keycloak: KeycloakService
     ) {
         this.blogForm = this.formBuilder.group({
             title: ['', Validators.required],
@@ -34,9 +41,12 @@ export class CreateBlogComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.authService.getProfile().subscribe(res => {
-            this.userDto = res;
-            console.log(this.userDto);
+        this.keycloak.loadUserProfile().then((userProfile) => {
+            this.userId = userProfile.id;
+            this.loggedInUser = userProfile;
+            console.log(this.loggedInUser);
+            console.log(this.userId);
+            console.log(userProfile);
         });
     }
 

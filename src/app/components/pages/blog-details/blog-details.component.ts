@@ -4,6 +4,8 @@ import {BlogServiceService} from '../../services/blog-service.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {CommentDto} from '../../models/CommentDto';
 import {CommentServiceService} from '../../services/comment-service.service';
+import {KeycloakService} from 'keycloak-angular';
+import {KeycloakProfile} from 'keycloak-js';
 
 @Component({
     selector: 'app-blog-details',
@@ -18,12 +20,23 @@ export class BlogDetailsComponent implements OnInit {
     images: string = '';
     newComment: CommentDto = new CommentDto();
     comments: any[] = [];
+
+    userId: string;
+    loggedInUser: KeycloakProfile;
     constructor(private blogService: BlogServiceService,
                 private route: ActivatedRoute,
                 private router: Router,
-                private commentService: CommentServiceService) { }
+                private commentService: CommentServiceService,
+                private keycloak: KeycloakService) { }
 
     ngOnInit(): void {
+        this.keycloak.loadUserProfile().then((userProfile) => {
+            this.userId = userProfile.id;
+            this.loggedInUser = userProfile;
+            console.log(this.loggedInUser);
+            console.log(this.userId);
+            console.log(userProfile);
+        });
         this.route.paramMap.subscribe(params => {
             this.blogId = Number(params.get('blogId'));
             this.getBlogDetails(this.blogId);
@@ -40,7 +53,7 @@ export class BlogDetailsComponent implements OnInit {
 
                 this.commentService.getCommentsByBlogId(blogId).subscribe(
                     (comments: CommentDto[]) => {
-                        this.comments = comments; // Mettez à jour la variable comments avec les données obtenues
+                        this.comments = comments;
                     },
                     error => {
                         console.error('Une erreur s\'est produite lors de la récupération des commentaires du blog.', error);
@@ -75,22 +88,29 @@ export class BlogDetailsComponent implements OnInit {
     getTimeAgo(dateAdded: string): string {
         const currentTime = new Date();
         const previousTime = new Date(dateAdded);
-        const timeDifference = Math.abs(currentTime.getTime() - previousTime.getTime());
-        const seconds = Math.floor(timeDifference / 1000);
-        const minutes = Math.floor(seconds / 60);
-        const hours = Math.floor(minutes / 60);
-        const days = Math.floor(hours / 24);
 
-        if (days > 0) {
-            return `Il y a ${days} jour(s)`;
-        } else if (hours > 0) {
-            return `Il y a ${hours} heure(s)`;
-        } else if (minutes > 0) {
-            return `Il y a ${minutes} minute(s)`;
-        } else {
+        // Vérifiez si la date ajoutée est valide
+        if (isNaN(previousTime.getTime())) {
+            return 'Date non valide';
+        }
+
+        const timeDifferenceInSeconds = Math.floor((currentTime.getTime() - previousTime.getTime()) / 1000);
+
+        if (timeDifferenceInSeconds < 60) {
             return 'Il y a quelques instants';
+        } else if (timeDifferenceInSeconds < 3600) {
+            const minutes = Math.floor(timeDifferenceInSeconds / 60);
+            return `Il y a ${minutes} minute(s)`;
+        } else if (timeDifferenceInSeconds < 86400) {
+            const hours = Math.floor(timeDifferenceInSeconds / 3600);
+            return `Il y a ${hours} heure(s)`;
+        } else {
+            const days = Math.floor(timeDifferenceInSeconds / 86400);
+            return `Il y a ${days} jour(s)`;
         }
     }
+
+
 
     deleteComment(commentId: number): void {
         this.commentService.deleteComment(commentId).subscribe(
