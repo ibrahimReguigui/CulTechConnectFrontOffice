@@ -8,4 +8,7 @@ export class Event {
     dateDeb: Date;
     dateFin: Date;
     type: TypeEvent; 
+    numTel: string;
+    prixTicket : String;
+    nomProprietaire : String;
 }

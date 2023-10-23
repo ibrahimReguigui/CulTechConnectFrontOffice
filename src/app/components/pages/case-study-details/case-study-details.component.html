@@ -4,7 +4,7 @@
 <div class="inner-banner">
     <div class="container">
         <div class="inner-title text-center">
-            <h3>Details des événements</h3>
+            <h3>Details de l"événement</h3>
             <ul>
                 <li><a href="index.html">Acceuil</a></li>
                 <li><i class='bx bx-chevron-right'></i></li>
@@ -31,7 +31,7 @@
                     </div>
                     <span></span>
                     <h2>{{ event.nom }}</h2>
-                    <p>Une brève description de l'événement, y compris son objectif, son contenu et ses points forts</p>
+                    <p>Cet événement est un événemet "{{event.type}}"</p>
 
                     <div class="content-widget-area">
                         <div class="row align-items-center">
@@ -64,41 +64,41 @@
 
             <div class="col-lg-4 col-md-12">
                 <div class="contact-widget">
-                    <h2>Info</h2>
+                    <h2>Information relatives</h2>
                     <ul>
                         <li>
-                            <i class="flaticon-telephone"></i>
+                            <i class="fa fa-person"></i>
                             <div class="content">
-                                <h3>Propriétaire de l'événement </h3>
-                                <span>ThenCary</span>
+                                <h3>Partenaire de l'événement </h3>
+                                <span>{{event.nomProprietaire}}</span>
                             </div>
                         </li>
                         <li>
                             <i class="flaticon-tick"></i>
                             <div class="content">
                                 <h3>Quand ?</h3>
-                                <span>26 Avril 2024</span>
+                                <span>{{ event.dateDeb | date:'yyyy-MM-dd' }}</span>
                             </div>
                         </li>
                         <li>
                             <i class="flaticon-planet-earth"></i>
                             <div class="content">
-                                <h3>Location:</h3>
-                                <span>Turquie</span>
+                                <h3>Lieu de l'événement</h3>
+                                <span>{{event.lieu}}</span>
                             </div>
                         </li>
                         <li>
                             <i class="flaticon-price-tag"></i>
                             <div class="content">
-                                <h3>Coût :</h3>
-                                <span>1,500 DT</span>
+                                <h3>Prix du ticket</h3>
+                                <span>{{event.prixTicket}}</span>
                             </div>
                         </li>
                         <li>
-                            <i class="flaticon-planet-earth"></i>
+                            <i class="flaticon-telephone"></i>
                             <div class="content">
                                 <h3>Contact :</h3>
-                                <span><a href="#">54 963 533</a></span>
+                                <span><a href="#">{{event.numTel}}</a></span>
                             </div>
                         </li>
                     </ul>
