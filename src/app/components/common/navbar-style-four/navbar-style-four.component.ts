@@ -1,7 +1,9 @@
+
 import {Component, Input, OnInit} from '@angular/core';
 import {KeycloakService} from 'keycloak-angular';
 import {GlobalVarService} from '../../../services/global-var.service';
 import {ChatService} from '../../../services/chat/chat.service';
+
 
 @Component({
   selector: 'app-navbar-style-four',
@@ -35,11 +37,4 @@ export class NavbarStyleFourComponent implements OnInit {
         )
     }
 
-    login() {
-        this.keycloak.login();
-    }
-
-    logout() {
-        this.keycloak.logout();
-    }
 }
