@@ -7,7 +7,7 @@ import { Payment } from './Payment.model';
   providedIn: 'root'
 })
 export class PaymentService {
-  private apiUrl = 'http://localhost:8096/api/payment'; // Replace with your actual API endpoint
+  private apiUrl = 'http://localhost:8098/api/payment'; // Replace with your actual API endpoint
 
 
   constructor(private http: HttpClient) { }

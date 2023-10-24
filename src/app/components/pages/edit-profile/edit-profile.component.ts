@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { UserDto } from '../../models/UserDto';
-import { AuthServiceService } from '../../services/auth-service.service';
+import { UserDto } from '../../../models/UserDto';
+import { AuthServiceService } from '../../../services/auth-service.service';
 
 @Component({
     selector: 'app-edit-profile',

@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {BlogForm} from '../../models/BlogForm';
-import {BlogServiceService} from '../../services/blog-service.service';
+import {BlogForm} from '../../../models/BlogForm';
+import {BlogServiceService} from '../../../services/blog-service.service';
 import {ActivatedRoute, Router} from '@angular/router';
-import {CommentDto} from '../../models/CommentDto';
-import {CommentServiceService} from '../../services/comment-service.service';
+import {CommentDto} from '../../../models/CommentDto';
+import {CommentServiceService} from '../../../services/comment-service.service';
 import {KeycloakService} from 'keycloak-angular';
 import {KeycloakProfile} from 'keycloak-js';
 

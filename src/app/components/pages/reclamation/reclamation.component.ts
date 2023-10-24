@@ -1,5 +1,5 @@
 import { Component, OnInit, Renderer2, ElementRef  } from '@angular/core';
-import { ReclamationService } from '../../services/reclamation.service';
+import { ReclamationService } from '../../../services/reclamation.service';
 import {KeycloakService} from 'keycloak-angular';
 import {KeycloakProfile} from 'keycloak-js';
 
@@ -11,14 +11,14 @@ import {KeycloakProfile} from 'keycloak-js';
 })
 export class ReclamationComponent implements OnInit {
 
-  reclamation: any = {}; 
-  reclamationRequests: any[] = []; 
+  reclamation: any = {};
+  reclamationRequests: any[] = [];
   showThankYouPopup: boolean = false;
   userId: string;
   loggedInUser: KeycloakProfile;
 
 
-  
+
   constructor(private reclamationService: ReclamationService,private renderer: Renderer2, private el: ElementRef, private keycloak: KeycloakService) { }
 
   ngOnInit(): void {
@@ -27,7 +27,7 @@ export class ReclamationComponent implements OnInit {
     this.keycloak.loadUserProfile().then((userProfile) => {
       this.userId = userProfile.id;
       this.loggedInUser = userProfile;
-   
+
       console.log (this.userId) ;
       console.log (this.loggedInUser.firstName) ;
   });
@@ -35,7 +35,7 @@ export class ReclamationComponent implements OnInit {
 
 
   loadReclamationRequests() {
-    
+
     this.reclamationService.getReclamations().subscribe((requests) => {
       this.reclamationRequests = requests;
     });
@@ -53,15 +53,15 @@ export class ReclamationComponent implements OnInit {
 
 
   onSubmit() {
-    //this.openDialog(); 
+    //this.openDialog();
 
     this.reclamationService.addReclamation(this.reclamation).subscribe((response) => {
-      this.openDialog(); 
+      this.openDialog();
       this.reclamation = {};
       this.loadReclamationRequests();
      },
       (error) => {
-        
+
         console.error('Error:', error);
       }
     );

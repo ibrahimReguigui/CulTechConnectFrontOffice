@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogServiceService } from '../../services/blog-service.service';
+import { BlogServiceService } from '../../../services/blog-service.service';
 import { Router } from '@angular/router';
-import { BlogForm } from '../../models/BlogForm';
-import { FileServiceService } from '../../services/file-service.service';
+import { BlogForm } from '../../../models/BlogForm';
+import { FileServiceService } from '../../../services/file-service.service';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import {KeycloakService} from 'keycloak-angular';
+import {GlobalVarService} from '../../../services/global-var.service';
 
 @Component({
     selector: 'app-blog',

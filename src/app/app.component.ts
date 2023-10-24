@@ -10,6 +10,8 @@ import {KeycloakService} from 'keycloak-angular';
 import {WebSocketService} from './services/chat/webSocket.service';
 import {ChatService} from './services/chat/chat.service';
 import {GlobalVarService} from './services/global-var.service';
+import {NotificationService} from './services/notification/notification.service';
+import {NotifService} from './services/notification/notif.service';
 
 declare let $: any;
 
@@ -27,74 +29,54 @@ declare let $: any;
 export class AppComponent implements OnInit {
     location: any;
     routerSubscription: any;
-    testvar=5;
     private userId: string;
-/*
-    private ws1: any;
-    private ws2: any;
-    private notificationSubject: Subject<Notification> = new Subject<Notification>();
-    private messagesNotificationSubject: Subject<string> = new Subject<string>();
 
-    private messagesNotifNbr: string;
-    private notification: Notification[];
-
-    connect(userId: string) {
-        this.userId = userId;
-        const socket1 = new WebSocket('ws://localhost:8093/notification');
-        const socket2 = new WebSocket('ws://localhost:8091/chat');
-        this.ws1 = Stomp.over(socket1);
-        this.ws2 = Stomp.over(socket2);
-        console.log(this.userId)
-        this.ws2.connect({
-            userId: userId // Pass the user ID as a connection header
-        }, () => {
-            this.ws2.subscribe('/message/notification/' + this.userId, (message) => {
-                this.messagesNotificationSubject.next(JSON.parse(message.body));
-            });
-            this.ws1.subscribe('/notification/notification/' + this.userId, (message) => {
-                this.notificationSubject.next(JSON.parse(message.body));
-            });
-        });
-    }
-
-    subscribeToMessagesNotificationSubject(): Observable<string> {
-        return this.messagesNotificationSubject.asObservable();
-    }
-
-    subscribeToNotificationSubject(): Observable<Notification> {
-        return this.notificationSubject.asObservable();
-    }
-*/
 
     constructor(private router: Router, private keycloak: KeycloakService,
                 private webSocketService: WebSocketService,private chatService:ChatService,
-                private globalVarService:GlobalVarService) {
+                private globalVarService:GlobalVarService,private notificationService:NotificationService,
+                private notifService:NotifService) {
 
     }
     unseenMessageNumber:any;
+    nbrNotif:any;
     ngOnInit() {
         this.keycloak.isLoggedIn().then(r=>{
             if (r==true){
+
                 this.keycloak.loadUserProfile().then((userProfile) => {
                     this.userId=userProfile.id
                     this.webSocketService.connect(userProfile.id);
+                    this.notificationService.connect(userProfile.id);
                 })
+
                 this.chatService.getAllMyMessage().subscribe(res => {
-                    console.log(res)
                     this.unseenMessageNumber = res.filter(e => e.recipient == this.userId &&
                         e.seen == false).length;
-                    console.log(this.unseenMessageNumber)
                     this.globalVarService.nbrMessageUnseen$.next(this.unseenMessageNumber)
                 });
+                this.notifService.getAllMyMessage().subscribe(r=>
+                {
+                    this.nbrNotif=r.length
+                    console.log(this.nbrNotif)
+                    this.globalVarService.nbrMessageUnseen$.next(this.nbrNotif)
+                })
                 this.webSocketService.subscribeToMessages().subscribe(() => {
                     this.chatService.getAllMyMessage().subscribe(res => {
                         console.log(res)
                         this.unseenMessageNumber = res.filter(e => e.recipient == this.userId &&
                             e.seen == false).length;
-                        console.log(this.unseenMessageNumber)
                         this.globalVarService.nbrMessageUnseen$.next(this.unseenMessageNumber)
                     });
                 });
+                this.notificationService.subscribeTonotificationsSubject().subscribe(() => {
+                    this.notifService.getAllMyMessage().subscribe(r=>
+                    {
+                        this.nbrNotif=r.filter(e => e.seen != true ).length
+                        this.globalVarService.nbrNotificationUnseen$.next(this.nbrNotif)
+                    })
+                })
+
             }
         });
 

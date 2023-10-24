@@ -21,9 +21,8 @@ import { ServicesDetailsComponent } from './components/pages/services-details/se
 import { BlogComponent } from './components/pages/blog/blog.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
-import {AuthGuard} from './components/security/AuthGuard';
 import {EditProfileComponent} from './components/pages/edit-profile/edit-profile.component';
-import {ChatComponent} from './chat/chat.component';
+import {ChatComponent} from './components/pages/chat/chat.component';
 import { EchangeComponent } from './components/pages/echange/echange.component';
 import { PayementComponent } from './components/pages/payement/payement.component';
 import { EchangeDetailsComponent } from './components/pages/echange-details/echange-details.component';
@@ -32,6 +31,8 @@ import { QuizComponent } from './components/pages/quiz/quiz.component';
 import {ReclamationComponent} from './components/pages/reclamation/reclamation.component';
 import {CreateBlogComponent} from './components/pages/create-blog/create-blog.component';
 import {UpdateBlogComponent} from './components/pages/update-blog/update-blog.component';
+import {AuthGuard} from './security/AuthGuard';
+import {ProfileComponent} from './components/pages/profile/profile.component';
 const routes: Routes = [
     {path: '', component: SeoAgencyComponent},
     {path: 'create-blog', component: CreateBlogComponent , canActivate: [AuthGuard]},
@@ -54,16 +55,17 @@ const routes: Routes = [
     {path: 'coming-soon', component: ComingSoonComponent},
     {path: 'services', component: ServicesComponent},
     {path: 'services-details', component: ServicesDetailsComponent},
-    {path: 'blog', component: BlogComponent},
-    {path: 'profile', component: BlogDetailsComponent, canActivate: [AuthGuard]},
+    {path: 'blog', component: BlogComponent, canActivate: [AuthGuard]},
+    {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
     {path: 'contact', component: ContactComponent},
     {path: 'echange', component: EchangeComponent},
-    {path: 'payement', component: PayementComponent},
+    {path: 'payement', component: PayementComponent, canActivate: [AuthGuard]},
     { path: 'echange/:id', component: EchangeDetailsComponent },
     { path: 'demande/:echangeId', component: ParticipantComponent },
     {path: 'edit-profile', component: EditProfileComponent},
-    {path: 'quiz', component: QuizComponent},
-    {path: 'reclamation', component: ReclamationComponent},
+    {path: 'quiz', component: QuizComponent, canActivate: [AuthGuard]},
+    {path: 'reclamation', component: ReclamationComponent, canActivate: [AuthGuard]},
+    {path: 'chat', component: ChatComponent, canActivate: [AuthGuard]},
     {path: '**', component: ErrorComponent}
 ];
 

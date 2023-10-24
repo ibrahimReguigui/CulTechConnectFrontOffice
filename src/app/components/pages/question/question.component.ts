@@ -1,5 +1,5 @@
 import { Component, OnInit,Input, Output, EventEmitter  } from '@angular/core';
-import { Question } from '../../models/Question';
+import { Question } from '../../../models/Question';
 
 
 @Component({
@@ -9,11 +9,11 @@ import { Question } from '../../models/Question';
 })
 export class QuestionComponent implements OnInit {
   @Input() question: Question;
-  @Input() userAnswer: number; 
+  @Input() userAnswer: number;
   @Output() answerSelected = new EventEmitter<number>();
 
   onAnswerSelected(answerIndex: number): void {
-   
+
     this.answerSelected.emit(answerIndex);
   }
   constructor() { }

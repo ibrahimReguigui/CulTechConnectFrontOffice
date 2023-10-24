@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogServiceService } from '../../services/blog-service.service';
+import { BlogServiceService } from '../../../services/blog-service.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { UserDto } from '../../models/UserDto';
+import { UserDto } from '../../../models/UserDto';
 import {ActivatedRoute, Router} from '@angular/router';
-import { AuthServiceService } from '../../services/auth-service.service';
-import { FileServiceService } from '../../services/file-service.service';
-import {BlogForm} from '../../models/BlogForm';
+import { AuthServiceService } from '../../../services/auth-service.service';
+import { FileServiceService } from '../../../services/file-service.service';
+import {BlogForm} from '../../../models/BlogForm';
 import {HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 
 @Component({

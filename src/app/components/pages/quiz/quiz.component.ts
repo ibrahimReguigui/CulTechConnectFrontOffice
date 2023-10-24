@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy , Renderer2, ElementRef } from '@angular/core';
 //import {Question} from '../question/question.component';
-import {QuizService} from '../../services/quiz.service';
+import {QuizService} from '../../../services/quiz.service';
 import { DialogComponent } from '../dialog/dialog.component';
 
 
@@ -30,10 +30,10 @@ ngOnInit(): void {
     //this.loadQuestions();
     this.startTimer();
   }
-  
+
 
 ngOnDestroy(): void {
-    clearInterval(this.timer); 
+    clearInterval(this.timer);
   }
 
 
@@ -44,10 +44,10 @@ startQuiz(): void {
   }
 
 loadQuestions(): void {
-  
+
       this.quizService.getQuestions().subscribe((data: any[]) => {
       this.questions = data;
-      this.timerCountdown = 10; 
+      this.timerCountdown = 10;
     });
   }
 
@@ -90,24 +90,24 @@ startTimer(): void {
         this.timerCountdown = 10;
       } else {
         this.allQuestionsAnswered = true;
-    
+
         if (this.userAnswer === undefined) {
-         
+
           this.openAnswerFasterDialog();
         } else {
           this.showScore = true;
         }
       }
     }
-   
+
     closeDialogAndMoveToNextQuestion(): void {
-      this.showDialog = false; 
-      this.nextQuestion(); 
+      this.showDialog = false;
+      this.nextQuestion();
     }
 
  openAnswerFasterDialog(): void {
     this.showDialog = true;
-   
+
   }
 
     }

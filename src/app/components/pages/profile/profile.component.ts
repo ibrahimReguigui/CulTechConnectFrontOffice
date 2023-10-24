@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import {AuthServiceService} from '../../services/auth-service.service';
+import {AuthServiceService} from '../../../services/auth-service.service';
 import {NgForm} from '@angular/forms';
 import { Router } from '@angular/router';
 import {KeycloakService} from 'keycloak-angular';
-import {UserDto} from '../../models/UserDto';
+import {UserDto} from '../../../models/UserDto';
 
 
 @Component({

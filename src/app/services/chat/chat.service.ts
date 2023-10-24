@@ -10,7 +10,7 @@ import {Message} from '../../models/message';
 })
 export class ChatService {
 
-    url = 'http://localhost:8091/chat';
+    url = 'http://localhost:8090/chat';
 
 
     constructor(private http: HttpClient, private keycloakService: KeycloakService) { }
@@ -20,10 +20,6 @@ export class ChatService {
         return new HttpHeaders().set('Authorization', `Bearer ${token}`);
     }
 
-    getAllMyMessage(): Observable<Message[]> {
-        let headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.getAuthHeaders());
-        return this.http.get<Message[]>(this.url + '/getAllMyMessage', { headers });
-    }
     setMessageSeen(id:number) {
         let headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.getAuthHeaders());
         return this.http.post(this.url + '/setMessageSeen', null,
@@ -32,6 +28,11 @@ export class ChatService {
 
     getConnectedUsers(): Observable<string[]> {
         let headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.getAuthHeaders());
-        return this.http.get<string[]>(this.url + '/getConnectedUsers', { headers });
+        return this.http.get<string[]>(this.url2 + '/getConnectedUsers', { headers });
     }
+    getAllMyMessage(): Observable<Message[]> {
+        let headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.getAuthHeaders());
+        return this.http.get<Message[]>('http://localhost:8091/chat/getAllMyMessage', { headers });
+    }
+    url2='http://localhost:8091/chat';
 }

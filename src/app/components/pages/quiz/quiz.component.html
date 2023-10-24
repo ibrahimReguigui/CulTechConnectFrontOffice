@@ -1,4 +1,4 @@
-<app-navbar-style-four></app-navbar-style-four>
+
 <div class="inner-banner">
     <div class="container">
         <div class="inner-title text-center">
@@ -20,11 +20,11 @@
     <div *ngIf="questions.length > 0">
         <h2>Quiz Question {{ currentQuestionIndex + 1 }}</h2>
         <p class="question-text">{{ questions[currentQuestionIndex].text }}</p>
-        <p class="timer">{{ timerCountdown }}</p> 
+        <p class="timer">{{ timerCountdown }}</p>
 
         <!-- <app-dialog [showDialog]="showDialog"></app-dialog> -->
 
-        
+
         <ul class="answer-choices">
             <li *ngFor="let answer of questions[currentQuestionIndex].choices; let i = index">
               <button
@@ -51,4 +51,3 @@
 
     </div>
 
-<app-footer-style-two></app-footer-style-two>

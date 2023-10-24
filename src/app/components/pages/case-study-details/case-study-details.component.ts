@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { EventService } from '../../services/event.service';
-import { Event } from '../../models/Event';
+import { EventService } from '../../../services/event.service';
+import { Event } from '../../../models/Event';
 
 @Component({
     selector: 'app-case-study-details',
@@ -12,7 +12,7 @@ export class CaseStudyDetailsComponent implements OnInit {
     @Input() selectedItem: any;
 
     eventId: number; // Variable pour stocker l'ID de l'événement
-    eventDetails: any; // 
+    eventDetails: any; //
     event : Event;
 
 
@@ -48,11 +48,11 @@ export class CaseStudyDetailsComponent implements OnInit {
         }
     };
     constructor(private route: ActivatedRoute, private eventService: EventService) {
-        
-            
+
+
      }
 
-    
+
 
     ngOnInit(): void {
 
@@ -70,9 +70,9 @@ export class CaseStudyDetailsComponent implements OnInit {
     getEventById(idEvent : any) {
         this.eventService.getEventDetails(idEvent).subscribe((x: any) => {
             this.event=x;
-            console.log(this.event); 
+            console.log(this.event);
           });
-    
+
     }
 
     onLike(comment: any): void {

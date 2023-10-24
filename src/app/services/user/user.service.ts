@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {KeycloakService} from 'keycloak-angular';
 import {Observable} from 'rxjs';
-import {UserDto} from '../../components/models/UserDto';
 import {User} from '../../models/user';
 
 @Injectable({

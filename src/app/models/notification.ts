@@ -3,6 +3,6 @@ export class Notification{
       userId:string;
       content:string;
       time:string;
-      seen:string;
+      seen:boolean;
       type:string;
 }

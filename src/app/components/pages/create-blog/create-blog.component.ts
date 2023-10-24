@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { BlogServiceService } from '../../services/blog-service.service';
+import { BlogServiceService } from '../../../services/blog-service.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { UserDto } from '../../models/UserDto';
+import { UserDto } from '../../../models/UserDto';
 import { Router } from '@angular/router';
-import { AuthServiceService } from '../../services/auth-service.service';
-import { FileServiceService } from '../../services/file-service.service';
+import { AuthServiceService } from '../../../services/auth-service.service';
+import { FileServiceService } from '../../../services/file-service.service';
 import {KeycloakService} from 'keycloak-angular';
 import {KeycloakProfile} from 'keycloak-js';
 
@@ -14,7 +14,7 @@ import {KeycloakProfile} from 'keycloak-js';
     styleUrls: ['./create-blog.component.scss']
 })
 export class CreateBlogComponent implements OnInit {
-    userDto: UserDto;
+    userDto: UserDto=new UserDto();
     successMessage = '';
     currentDate: Date = new Date();
     blog: { title: string; content: string } = { title: '', content: '' };
