@@ -40,7 +40,16 @@ import { EchangeComponent } from './components/pages/echange/echange.component';
 import { PayementComponent } from './components/pages/payement/payement.component';
 import { EchangeDetailsComponent } from './components/pages/echange-details/echange-details.component';
 import { ParticipantComponent } from './components/pages/participant/participant.component';
-
+import { QuizComponent } from './components/pages/quiz/quiz.component';
+import { QuestionComponent } from './components/pages/question/question.component';
+import { ReponseComponent } from './components/pages/reponse/reponse.component';
+import { ResultComponent } from './components/pages/result/result.component';
+import { ReclamationComponent } from './components/pages/reclamation/reclamation.component';
+import { DialogComponent } from './components/pages/dialog/dialog.component';
+import {UpdateBlogComponent} from './components/pages/update-blog/update-blog.component';
+import {CreateBlogComponent} from './components/pages/create-blog/create-blog.component';
+//import {MatDialogModule} from '@angular/material/dialog';
+//import {MatButtonModule} from '@angular/material/button';
 
 function initializeKeycloak(keycloak: KeycloakService) {
     return () =>
@@ -59,6 +68,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
             }
         });
 }
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -95,11 +105,21 @@ function initializeKeycloak(keycloak: KeycloakService) {
     EchangeComponent,
     PayementComponent,
     EchangeDetailsComponent,
-    ParticipantComponent
+    ParticipantComponent,
+    QuizComponent,
+    QuestionComponent,
+    ReponseComponent,
+    ResultComponent,
+    ReclamationComponent,
+    DialogComponent,
+      UpdateBlogComponent,
+      CreateBlogComponent,
+      ReclamationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, HttpClientModule, KeycloakAngularModule, FormsModule, ReactiveFormsModule,
+    //MatDialogModule,MatButtonModule
   ],
   providers: [
       { provide: APP_INITIALIZER,

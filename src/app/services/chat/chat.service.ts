@@ -29,4 +29,9 @@ export class ChatService {
         return this.http.post(this.url + '/setMessageSeen', null,
             { headers, params: {  id }});
     }
+
+    getConnectedUsers(): Observable<string[]> {
+        let headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.getAuthHeaders());
+        return this.http.get<string[]>(this.url + '/getConnectedUsers', { headers });
+    }
 }

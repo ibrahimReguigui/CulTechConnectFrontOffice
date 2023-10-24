@@ -1,6 +1,6 @@
 <div class="navbar-area">
     <div class="mobile-nav">
-        <a routerLink="/" class="logo"><img src="assets/img/logo/logo1.png" alt="Logo"></a>
+        <a routerLink="/" class="logo"><img src="assets/cul.png" alt="Logo"></a>
     </div>
 
     <div class="main-nav">
@@ -10,7 +10,7 @@
                 <style>
                     .navbar-brand img {
                         width: 150px;
-                        height: 80px;
+                        height: 100px;
                         float: right;
                         margin-left: 50px;
                     }
@@ -87,26 +87,35 @@
                                 <li class="nav-item"><a routerLink="/blog" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Blog</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link"> Quiz <i class='bx bx-plus'></i></a>
 
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a routerLink="/quiz" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Quiz</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:void(0);" class="nav-link"> Reclamation <i class='bx bx-plus'></i></a>
+
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a routerLink="/reclamation" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Reclamation</a></li>
+                            </ul>
+                        </li>
 
                         <li class="nav-item"><a routerLink="/contact" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Contact</a></li>
                         <li class="nav-item"><a routerLink="/profile" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Profile</a></li>
                     </ul>
 
                     <div class="side-nav d-in-line align-items-center">
-                        <!--<div class="side-item">
+                        <div class="side-item">
                             <div class="search-box">
                                 <i class="flaticon-loupe"></i>
-                            </div>
-                        </div>-->
-                        <div class="side-item" [hidden]="!authenticated">
-                            <div class="user-btn">
-                                <a routerLink="/sign-up"><i class="flaticon-clipboard">2</i></a>
                             </div>
                         </div>
                         <div class="side-item" [hidden]="!authenticated">
                             <div class="user-btn">
-                                <a routerLink="/sign-up"><i class="flaticon-email-1">{{unseenMessageNumber}}</i></a>
+                                <a routerLink="/chat"><i class="flaticon-email-1">{{unseenMessageNumber}}</i></a>
                             </div>
                         </div>
                         <div class="side-item" [hidden]="!authenticated">
@@ -116,8 +125,7 @@
                         </div>
                         <div class="side-item">
                             <div class="nav-add-btn">
-                                <a [hidden]="authenticated" (click)="login()" class="nav-menu-btn">Login<i class='bx bx-plus'></i></a>
-                                <a [hidden]="!authenticated" (click)="logout()" (click)="logout()" class="nav-menu-btn">Logout <i class='bx bx-log-out'></i></a>
+                                <a routerLink="/contact" class="nav-menu-btn">Contactez-nous<i class='bx bx-plus'></i></a>
                             </div>
                         </div>
                     </div>
