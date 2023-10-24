@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpEvent, HttpHeaders} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import {HttpClient, HttpErrorResponse, HttpEvent, HttpHeaders} from '@angular/common/http';
+import {Observable, throwError} from 'rxjs';
 import {BlogForm} from '../models/BlogForm';
+import {KeycloakService} from 'keycloak-angular';
+import {catchError} from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -9,9 +11,16 @@ import {BlogForm} from '../models/BlogForm';
 export class FileServiceService {
 
     url = 'http://localhost:8093/';
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,
+              private keycloakService: KeycloakService) { }
+
+    private getAuthHeaders(): HttpHeaders {
+        const token = this.keycloakService.getKeycloakInstance().token;
+        return new HttpHeaders().set('Authorization', `Bearer ${token}`);
+    }
 
     upload(formData: FormData): Observable<HttpEvent<string[]>> {
+        const headers = new HttpHeaders().set('Authorization', 'Bearer ' + this.getAuthHeaders());
         return this.http.post<string[]>(`${this.url}file/upload`, formData, {
             reportProgress: true,
             observe: 'events'

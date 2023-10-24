@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { BlogForm } from '../../models/BlogForm';
 import { FileServiceService } from '../../services/file-service.service';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
+import {KeycloakService} from 'keycloak-angular';
 
 @Component({
     selector: 'app-blog',
@@ -21,7 +22,8 @@ export class BlogComponent implements OnInit {
 
     constructor(
         private fileService: FileServiceService,
-        private router: Router
+        private router: Router,
+        private keycloak: KeycloakService,
     ) { }
 
     ngOnInit(): void {
