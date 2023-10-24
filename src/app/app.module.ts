@@ -41,7 +41,9 @@ import { ReponseComponent } from './components/pages/reponse/reponse.component';
 import { ResultComponent } from './components/pages/result/result.component';
 import { ReclamationComponent } from './components/pages/reclamation/reclamation.component';
 import { DialogComponent } from './components/pages/dialog/dialog.component';
-//import {MatDialogModule} from '@angular/material/dialog'; 
+import {UpdateBlogComponent} from './components/pages/update-blog/update-blog.component';
+import {CreateBlogComponent} from './components/pages/create-blog/create-blog.component';
+//import {MatDialogModule} from '@angular/material/dialog';
 //import {MatButtonModule} from '@angular/material/button';
 
 function initializeKeycloak(keycloak: KeycloakService) {
@@ -61,6 +63,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
             }
         });
 }
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -98,7 +101,9 @@ function initializeKeycloak(keycloak: KeycloakService) {
     ReponseComponent,
     ResultComponent,
     ReclamationComponent,
-    DialogComponent
+    DialogComponent,
+      UpdateBlogComponent,
+      CreateBlogComponent
   ],
   imports: [
     BrowserModule,

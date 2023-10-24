@@ -25,8 +25,13 @@ import {AuthGuard} from './components/security/AuthGuard';
 import {EditProfileComponent} from './components/pages/edit-profile/edit-profile.component';
 import { QuizComponent } from './components/pages/quiz/quiz.component';
 import {ReclamationComponent} from './components/pages/reclamation/reclamation.component';
+import {CreateBlogComponent} from './components/pages/create-blog/create-blog.component';
+import {UpdateBlogComponent} from './components/pages/update-blog/update-blog.component';
 const routes: Routes = [
     {path: '', component: SeoAgencyComponent},
+    {path: 'create-blog', component: CreateBlogComponent , canActivate: [AuthGuard]},
+    {path: 'update-blog/:blogId', component: UpdateBlogComponent , canActivate: [AuthGuard]},
+    { path: 'blog-details/:blogId', component: BlogDetailsComponent, canActivate: [AuthGuard]},
     {path: 'ai-startup', component: AiStartupComponent},
     {path: 'machine-learning', component: MachineLearningComponent},
     {path: 'about', component: AboutComponent},
@@ -35,7 +40,7 @@ const routes: Routes = [
     {path: 'faq', component: FaqComponent},
     {path: 'testimonials', component: TestimonialsComponent},
     {path: 'case-study', component: CaseStudyComponent},
-    {path: 'case-study-details', component: CaseStudyDetailsComponent},
+    {path: 'case-study-details/:idEvent', component: CaseStudyDetailsComponent},
     {path: 'error', component: ErrorComponent},
     {path: 'sign-in', component: SignInComponent},
     {path: 'sign-up', component: SignUpComponent},

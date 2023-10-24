@@ -112,7 +112,12 @@
                                 <i class="flaticon-loupe"></i>
                             </div>
                         </div>
-                        <div class="side-item">
+                        <div class="side-item" [hidden]="!authenticated">
+                            <div class="user-btn">
+                                <a routerLink="/chat"><i class="flaticon-email-1">{{unseenMessageNumber}}</i></a>
+                            </div>
+                        </div>
+                        <div class="side-item" [hidden]="!authenticated">
                             <div class="user-btn">
                                 <a routerLink="/sign-up"><i class="flaticon-contact"></i></a>
                             </div>
