@@ -1,0 +1,16 @@
+<div class="question-container">
+    <p class="question-text">{{ question.text }}</p>
+    <ul class="answer-choices">
+      <li *ngFor="let answer of question.choices; let i = index">
+        <label>
+          <input type="radio"
+                 name="answer"
+                 [value]="i"
+                 [checked]="userAnswer === i"
+                 (change)="onAnswerSelected(i)">
+          {{ answer }}
+        </label>
+      </li>
+    </ul>
+  </div>
+  

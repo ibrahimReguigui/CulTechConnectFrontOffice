@@ -1,0 +1,39 @@
+<app-navbar-style-four></app-navbar-style-four>
+
+<div class="inner-banner">
+    <div class="container">
+        <div class="inner-title text-center">
+            <h3>Reclamation</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><i class='bx bx-chevron-right'></i></li>
+                <li>Reclamation</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="page-container">
+    <div class="form-container">
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" [(ngModel)]="reclamation.name" required>
+            </div>
+            <div class="form-group">
+                <label for="details">Description:</label>
+                <textarea id="details" name="details" [(ngModel)]="reclamation.details" required></textarea>
+            </div>
+            <button type="submit" class="button">Submit Reclamation</button>
+        </form>
+    </div>
+ 
+    <div id="custom-dialog" class="dialog" >
+        <div class="dialog-content">
+            <p>Thank you for your reclamation. The reclamation has been sent.</p>
+            <button (click)="closeDialog()">Close</button>
+        </div>
+    </div>
+</div>
+
+<app-footer-style-two></app-footer-style-two>
