@@ -9,6 +9,7 @@ import {User} from '../models/user';
 import {ChatService} from '../services/chat/chat.service';
 import {applySourceSpanToExpressionIfNeeded} from '@angular/compiler/src/output/output_ast';
 import {KeycloakProfile} from 'keycloak-js';
+import {GlobalVarService} from '../services/global-var.service';
 
 @Component({
     selector: 'app-chat',
@@ -32,12 +33,17 @@ export class ChatComponent implements OnInit, AfterViewChecked {
     searchInput: string = '';
 
     constructor(private keycloak: KeycloakService, private webSocketService: WebSocketService,
-                private userService: UserService, private chatService: ChatService,) {
+                private userService: UserService, private chatService: ChatService,
+                private globalVarService:GlobalVarService) {
     }
 
     ngOnInit(): void {
+        this.chatService.getConnectedUsers().subscribe(res=>
+            this.connectedUsers=res
+        )
         this.keycloak.loadUserProfile().then((userProfile) => {
             this.userId = userProfile.id;
+            console.log(this.userId)
             this.loggedInUser = userProfile;
             this.connect();
         });
@@ -47,6 +53,8 @@ export class ChatComponent implements OnInit, AfterViewChecked {
                 this.messages = res;
                 this.unseenMessageNumber = this.messages.filter(e => e.recipient == this.userId &&
                     e.seen == false).length;
+                this.globalVarService.nbrMessageUnseen$.next(0)
+                this.globalVarService.nbrMessageUnseen$.next(this.unseenMessageNumber)
                 this.updateUnreadMessagesAndLastMessage();
             });
         });
@@ -67,7 +75,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
     }
 
     connect() {
-        this.webSocketService.connect(this.userId);
+        //this.webSocketService.connect(this.userId);
 
         // Subscribe to messages
         this.webSocketService.subscribeToMessages().subscribe((message) => {
@@ -102,11 +110,13 @@ export class ChatComponent implements OnInit, AfterViewChecked {
         });
 
         this.updateUnreadMessagesAndLastMessage();
+
     }
 
 
     updateUnreadMessagesAndLastMessage(): void {
         this.unseenMessageNumber = 0;
+        this.globalVarService.nbrMessageUnseen$.next(this.unseenMessageNumber)
         this.userList.map(user => {
             user.unreadMessages = this.messages.filter(
                 message => message.sender === user.id && !message.seen
@@ -116,6 +126,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
                     .filter(message => message.sender === user.id)
                     .pop();
                 this.unseenMessageNumber += user.unreadMessages;
+                this.globalVarService.nbrMessageUnseen$.next(this.unseenMessageNumber)
             }
         })
     }
