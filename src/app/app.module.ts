@@ -35,6 +35,16 @@ import {HttpClientModule} from '@angular/common/http';
 import {KeycloakAngularModule, KeycloakService} from 'keycloak-angular';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { EditProfileComponent } from './components/pages/edit-profile/edit-profile.component';
+import { QuizComponent } from './components/pages/quiz/quiz.component';
+import { QuestionComponent } from './components/pages/question/question.component';
+import { ReponseComponent } from './components/pages/reponse/reponse.component';
+import { ResultComponent } from './components/pages/result/result.component';
+import { ReclamationComponent } from './components/pages/reclamation/reclamation.component';
+import { DialogComponent } from './components/pages/dialog/dialog.component';
+import {UpdateBlogComponent} from './components/pages/update-blog/update-blog.component';
+import {CreateBlogComponent} from './components/pages/create-blog/create-blog.component';
+//import {MatDialogModule} from '@angular/material/dialog';
+//import {MatButtonModule} from '@angular/material/button';
 
 function initializeKeycloak(keycloak: KeycloakService) {
     return () =>
@@ -53,6 +63,7 @@ function initializeKeycloak(keycloak: KeycloakService) {
             }
         });
 }
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,11 +95,20 @@ function initializeKeycloak(keycloak: KeycloakService) {
     BlogDetailsComponent,
     BlogComponent,
     ContactComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    QuizComponent,
+    QuestionComponent,
+    ReponseComponent,
+    ResultComponent,
+    ReclamationComponent,
+    DialogComponent,
+      UpdateBlogComponent,
+      CreateBlogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, HttpClientModule, KeycloakAngularModule, FormsModule, ReactiveFormsModule,
+    //MatDialogModule,MatButtonModule
   ],
   providers: [
       { provide: APP_INITIALIZER,
